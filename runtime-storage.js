@@ -188,32 +188,15 @@
     const ownedCollections = normalizeCollections(options.collections);
     const ownedRecordCollections = RECORD_COLLECTIONS.filter((collection) => ownedCollections.includes(collection));
     if (!ownedRecordCollections.length) throw new Error("D1 mode requires an explicit shared record collection allowlist");
-    const settingsAdapter = createLocalAdapter({
-      tripId,
-      storage: options.storage,
-      storageKey: options.settingsStorageKey,
-      storageKeyPrefix: options.storageKeyPrefix || `${DEFAULT_KEY_PREFIX}:d1-settings`,
-      collections: ["settings"]
-    });
+    const remoteCollections = [
+      ...ownedRecordCollections,
+      ...(ownedCollections.includes("settings") ? ["settings"] : [])
+    ];
     let previous = null;
     let queue = Promise.resolve();
 
     function endpoint() {
-      return `${apiBase}/${encodeURIComponent(tripId)}?collections=${encodeURIComponent(ownedRecordCollections.join(","))}`;
-    }
-
-    async function readLocalSettings() {
-      const local = await settingsAdapter.load();
-      return local.settings;
-    }
-
-    async function withLocalSettings(remote) {
-      const snapshot = scopeSnapshot(remote, ownedCollections);
-      if (ownedCollections.includes("settings")) {
-        const localSettings = await readLocalSettings();
-        if (localSettings) snapshot.settings = localSettings;
-      }
-      return snapshot;
+      return `${apiBase}/${encodeURIComponent(tripId)}?collections=${encodeURIComponent(remoteCollections.join(","))}`;
     }
 
     async function request(method, changes) {
@@ -226,7 +209,7 @@
           };
       const response = await fetch(endpoint(), init);
       if (!response.ok) throw new Error(`API ${response.status}`);
-      previous = await withLocalSettings(await response.json());
+      previous = scopeSnapshot(await response.json(), ownedCollections);
       return normalizeSnapshot(previous);
     }
 
@@ -246,10 +229,18 @@
       async save(snapshot) {
         return enqueue(async () => {
           const next = normalizeSnapshot(snapshot);
-          if (ownedCollections.includes("settings")) {
-            await settingsAdapter.applyChange("settings", next.settings || {}, "upsert");
-          }
           const changes = [];
+          if (
+            ownedCollections.includes("settings")
+            && JSON.stringify(previous?.settings || null) !== JSON.stringify(next.settings || null)
+          ) {
+            changes.push({
+              op: "upsert",
+              collection: "settings",
+              id: "settings",
+              value: deepClone(next.settings || {})
+            });
+          }
           for (const collection of ownedRecordCollections) {
             const before = new Map((previous?.[collection] || []).map((item) => [String(item.id), item]));
             const after = new Map(next[collection].map((item) => [String(item.id), item]));
@@ -284,9 +275,12 @@
             throw new Error(`Runtime collection is not enabled for this D1 adapter: ${collection}`);
           }
           if (collection === "settings") {
-            const local = await settingsAdapter.applyChange(collection, value, op);
-            if (previous) previous.settings = local.settings;
-            return previous ? normalizeSnapshot(previous) : withLocalSettings(emptySnapshot());
+            return request("POST", [{
+              op,
+              collection: "settings",
+              id: "settings",
+              ...(op === "upsert" ? { value: deepClone(value || {}) } : {})
+            }]);
           }
           const id = String(typeof value === "object" && value !== null ? value.id || "" : value || "").trim();
           if (!id) throw new Error(`${collection} records require a stable id`);

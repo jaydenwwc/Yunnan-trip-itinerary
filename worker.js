@@ -1,4 +1,5 @@
 const RECORD_COLLECTIONS = ["bills", "travelers", "todos", "tickets"];
+const SUPPORTED_COLLECTIONS = [...RECORD_COLLECTIONS, "settings"];
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -29,7 +30,7 @@ function requestedCollections(url) {
     .filter(Boolean);
 
   return [...new Set(requested)].filter((item) =>
-    RECORD_COLLECTIONS.includes(item)
+    SUPPORTED_COLLECTIONS.includes(item)
   );
 }
 
@@ -38,6 +39,29 @@ async function loadSnapshot(db, tripId, collections) {
   let latest = "";
 
   for (const collection of collections) {
+    if (collection === "settings") {
+      const row = await db
+        .prepare(`
+          SELECT value_json, updated_at
+          FROM runtime_records
+          WHERE trip_id = ? AND collection = ? AND record_id = ?
+          LIMIT 1
+        `)
+        .bind(tripId, "settings", "settings")
+        .first();
+
+      if (row?.value_json) {
+        try {
+          const value = JSON.parse(row.value_json);
+          snapshot.settings = value && typeof value === "object" ? value : null;
+          if (row.updated_at && row.updated_at > latest) latest = row.updated_at;
+        } catch {
+          snapshot.settings = null;
+        }
+      }
+      continue;
+    }
+
     const { results = [] } = await db
       .prepare(`
         SELECT value_json, updated_at
@@ -69,12 +93,14 @@ async function applyChanges(db, tripId, collections, changes) {
 
   for (const change of changes) {
     const collection = String(change?.collection || "");
-    const id = String(change?.id || "").trim();
+    let id = String(change?.id || "").trim();
     const op = String(change?.op || "");
 
     if (!collections.includes(collection)) {
       throw new Error(`Collection not allowed: ${collection}`);
     }
+
+    if (collection === "settings") id = "settings";
     if (!id) throw new Error("Missing record id");
 
     if (op === "delete") {

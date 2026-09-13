@@ -395,13 +395,14 @@
       });
     }
     let previous = null;
-    const collections = ["bills", "travelers"];
+    const recordCollections = ["bills", "travelers"];
+    const collections = [...recordCollections, "settings"];
     const rawApiBase = String(options.apiBase || "/api/trip").trim();
     if (!/^\/(?!\/)/.test(rawApiBase) || rawApiBase.includes("\\") || /[?#]/.test(rawApiBase)) {
       throw new Error("D1 apiBase must be a same-origin absolute path");
     }
     const apiBase = rawApiBase.replace(/\/+$/, "") || "/";
-    const endpoint = `${apiBase}/${encodeURIComponent(tripId)}?collections=bills%2Ctravelers`;
+    const endpoint = `${apiBase}/${encodeURIComponent(tripId)}?collections=${encodeURIComponent(collections.join(","))}`;
     return {
       mode: "d1",
       async load() {
@@ -412,14 +413,40 @@
       },
       async save(next) {
         const changes = [];
-        for (const collection of collections) {
-          const before = new Map((previous?.[collection] || []).map((item) => [item.id, item]));
-          const after = new Map((next[collection] || []).map((item) => [item.id, item]));
-          before.forEach((_, id) => { if (!after.has(id)) changes.push({ op: "delete", collection, id }); });
-          after.forEach((value, id) => {
-            if (JSON.stringify(before.get(id)) !== JSON.stringify(value)) changes.push({ op: "upsert", collection, id, value });
+
+        if (
+          JSON.stringify(previous?.settings || null)
+          !== JSON.stringify(next.settings || null)
+        ) {
+          changes.push({
+            op: "upsert",
+            collection: "settings",
+            id: "settings",
+            value: next.settings || {}
           });
         }
+
+        for (const collection of recordCollections) {
+          const before = new Map(
+            (previous?.[collection] || []).map((item) => [item.id, item])
+          );
+          const after = new Map(
+            (next[collection] || []).map((item) => [item.id, item])
+          );
+
+          before.forEach((_, id) => {
+            if (!after.has(id)) {
+              changes.push({ op: "delete", collection, id });
+            }
+          });
+
+          after.forEach((value, id) => {
+            if (JSON.stringify(before.get(id)) !== JSON.stringify(value)) {
+              changes.push({ op: "upsert", collection, id, value });
+            }
+          });
+        }
+
         const response = await fetch(endpoint, {
           method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ changes })
         });
