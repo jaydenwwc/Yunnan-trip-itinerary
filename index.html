@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
+<script>
+(() => {
+  const saved = localStorage.getItem("yunnan-theme");
+  const dark = saved === "dark" ||
+    (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+})();
+</script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f3f6f2">
@@ -34,6 +43,11 @@
         </div>
       </details>
       <a class="primary-navigation__ledger" id="ledger-navigation-link" href="#ledger" data-module="ledger" hidden>记账</a>
+
+      <button class="theme-toggle" id="theme-toggle" type="button"
+        aria-label="切换明暗模式" title="切换明暗模式">
+        <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+      </button>
     </nav>
   </header>
 
@@ -144,5 +158,35 @@
     <strong>行程暂时无法载入</strong>
     <span>请确认 trip-data.json 已通过生成校验，并与网页位于同一目录。</span>
   </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("theme-toggle");
+  if (!button) return;
+
+  const icon = button.querySelector(".theme-toggle__icon");
+
+  function updateButton() {
+    const dark = document.documentElement.dataset.theme === "dark";
+    icon.textContent = dark ? "☀" : "☾";
+    button.setAttribute(
+      "aria-label",
+      dark ? "切换到浅色模式" : "切换到深色模式"
+    );
+    button.title = dark ? "浅色模式" : "深色模式";
+  }
+
+  button.addEventListener("click", () => {
+    const dark = document.documentElement.dataset.theme === "dark";
+    const next = dark ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem("yunnan-theme", next);
+    updateButton();
+  });
+
+  updateButton();
+});
+</script>
+
 </body>
 </html>

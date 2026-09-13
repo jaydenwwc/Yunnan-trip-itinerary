@@ -919,7 +919,8 @@
           2,
           8,
           9
-        ]
+        ],
+        "mapRegionId": "CN-YN"
       },
       {
         "id": "dali",
@@ -934,7 +935,8 @@
           2,
           3,
           4
-        ]
+        ],
+        "mapRegionId": "CN-YN"
       },
       {
         "id": "lijiang",
@@ -950,7 +952,8 @@
           5,
           6,
           7
-        ]
+        ],
+        "mapRegionId": "CN-YN"
       },
       {
         "id": "shangri-la",
@@ -964,7 +967,8 @@
         "days": [
           7,
           8
-        ]
+        ],
+        "mapRegionId": "CN-YN"
       }
     ],
     "routes": [
@@ -1006,39 +1010,49 @@
         "id": "yunnan",
         "label": "云南",
         "countryCode": "CN",
-        "scope": "template-schematic",
-        "mapMode": "frozen-template",
-        "templateId": "upland-basin",
-        "mapModeReason": "balanced-or-east-west-route",
-        "mapModeMetrics": {
-          "placeCount": 4,
-          "geoPlaceCount": 4,
-          "widthKm": 300.17,
-          "heightKm": 309.78,
-          "spanKm": 431.89,
-          "averageNearestKm": 158.07,
-          "components": 1,
-          "largestLegKm": 431.89,
-          "jumpRatio": 1.7
-        },
         "days": [
           2,
           4,
           7,
           8
         ],
+        "dayIds": [
+          "day-2",
+          "day-4",
+          "day-7",
+          "day-8"
+        ],
         "canvas": {
           "width": 1448,
           "height": 1086
         },
+        "baseImage": "assets/maps/yunnan-base.svg",
         "projection": {
-          "type": "relative-schematic",
-          "bounds": null
+          "type": "equirectangular-fit",
+          "bounds": [
+            97.58261748200005,
+            21.171143518000065,
+            106.20385541500008,
+            29.340099191000036
+          ],
+          "padding": 74,
+          "midLatitude": 25.26,
+          "longitudeFactor": 0.90441329,
+          "scale": 114.82495897,
+          "offset": {
+            "x": 276.35,
+            "y": 74
+          },
+          "projectedBounds": {
+            "west": 88.25501612,
+            "east": 96.05217828,
+            "north": -29.34009919,
+            "south": -21.17114352
+          }
         },
-        "baseImage": "assets/maps/templates/template-06-upland-basin.webp",
         "title": "云南 · 旅行路线",
-        "ariaLabel": "云南模板化旅行路线示意图，共4天",
-        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "ariaLabel": "云南旅行路线地图",
+        "description": "由授权国家边界与本次行程地点确定性生成的标准路线地图。",
         "heading": {
           "text": "云南",
           "x": 33,
@@ -1051,271 +1065,289 @@
           "gap": 43
         },
         "annotations": [],
-        "routes": [
-          {
-            "day": 2,
-            "color": "#e77e22",
-            "placeIds": [
-              "kunming",
-              "dali"
-            ],
-            "paths": [
-              "M1052.32 728.8 C948.1 670.9 836.4 642.0 723.68 643.87"
-            ],
-            "overviewPaths": [
-              "M1052.32 728.8 C948.1 670.9 836.4 642.0 723.68 643.87"
-            ]
-          },
-          {
-            "day": 4,
-            "color": "#209aaa",
-            "placeIds": [
-              "dali",
-              "lijiang"
-            ],
-            "paths": [
-              "M723.68 643.87 C740.9 579.0 739.2 514.6 718.62 454.49"
-            ],
-            "overviewPaths": [
-              "M723.68 643.87 C740.9 579.0 739.2 514.6 718.62 454.49"
-            ]
-          },
-          {
-            "day": 7,
-            "color": "#397dc1",
-            "placeIds": [
-              "lijiang",
-              "shangri-la"
-            ],
-            "paths": [
-              "M718.62 454.49 C680.2 412.9 656.1 364.1 647.68 311.2"
-            ],
-            "overviewPaths": [
-              "M718.62 454.49 C680.2 412.9 656.1 364.1 647.68 311.2"
-            ]
-          },
-          {
-            "day": 8,
-            "color": "#e77e22",
-            "placeIds": [
-              "shangri-la",
-              "kunming"
-            ],
-            "paths": [
-              "M647.68 311.2 C763.7 474.1 901.3 616.0 1052.32 728.8"
-            ],
-            "overviewPaths": [
-              "M647.68 311.2 C763.7 474.1 901.3 616.0 1052.32 728.8"
-            ]
-          }
-        ],
         "places": [
           {
-            "id": "kunming",
-            "x": 1052.32,
-            "y": 728.8,
-            "color": "#397dc1",
-            "tx": 1084.32,
-            "ty": 696.8,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "Kunming /",
-              "昆明"
-            ],
-            "query": "Kunming 云南",
+            "placeId": "place-kunming",
             "geo": {
               "lat": 25.0389,
               "lng": 102.7183
             },
-            "days": [
-              1,
-              2,
-              8,
-              9
-            ]
+            "x": 809.68,
+            "y": 567.89,
+            "label": "昆明",
+            "lines": [
+              "昆明"
+            ],
+            "color": "#397dc1",
+            "tx": 831.68,
+            "ty": 549.89,
+            "anchor": "start",
+            "size": 24
           },
           {
-            "id": "dali",
-            "x": 723.68,
-            "y": 643.87,
-            "color": "#e77e22",
-            "tx": 691.68,
-            "ty": 611.87,
-            "size": 24,
-            "anchor": "end",
-            "lines": [
-              "Dali /",
-              "大理"
-            ],
-            "query": "Dali 云南",
+            "placeId": "place-dali",
             "geo": {
               "lat": 25.6065,
               "lng": 100.2676
             },
-            "days": [
-              2,
-              3,
-              4
-            ]
+            "x": 555.18,
+            "y": 502.71,
+            "label": "大理",
+            "lines": [
+              "大理"
+            ],
+            "color": "#e77e22",
+            "tx": 577.18,
+            "ty": 484.71,
+            "anchor": "start",
+            "size": 24
           },
           {
-            "id": "lijiang",
-            "x": 718.62,
-            "y": 454.49,
-            "color": "#209aaa",
-            "tx": 796.62,
-            "ty": 392.49,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "Lijiang /",
-              "丽江"
-            ],
-            "query": "Lijiang 云南",
+            "placeId": "place-lijiang",
             "geo": {
               "lat": 26.8721,
               "lng": 100.2299
             },
-            "days": [
-              4,
-              5,
-              6,
-              7
-            ]
+            "x": 551.26,
+            "y": 357.39,
+            "label": "丽江",
+            "lines": [
+              "丽江"
+            ],
+            "color": "#618344",
+            "tx": 573.26,
+            "ty": 339.39,
+            "anchor": "start",
+            "size": 24
           },
           {
-            "id": "shangri-la",
-            "x": 647.68,
-            "y": 311.2,
-            "color": "#397dc1",
-            "tx": 569.68,
-            "ty": 249.2,
-            "size": 24,
-            "anchor": "end",
-            "lines": [
-              "Shangri-La /",
-              "香格里拉"
-            ],
-            "query": "Shangri-La 云南",
+            "placeId": "place-shangri-la",
             "geo": {
               "lat": 27.8297,
               "lng": 99.7009
             },
-            "days": [
-              7,
-              8
-            ]
+            "x": 496.33,
+            "y": 247.43,
+            "label": "香格里拉",
+            "lines": [
+              "香格里拉"
+            ],
+            "color": "#209aaa",
+            "tx": 518.33,
+            "ty": 229.43,
+            "anchor": "start",
+            "size": 24
           }
         ],
-        "overviewPlaceIds": [
-          "kunming",
-          "dali",
-          "lijiang",
-          "shangri-la"
+        "placeIds": [
+          "place-kunming",
+          "place-dali",
+          "place-lijiang",
+          "place-shangri-la"
+        ],
+        "routes": [
+          {
+            "day": 2,
+            "dayId": "day-2",
+            "color": "#e77e22",
+            "placeIds": [
+              "place-kunming",
+              "place-dali"
+            ],
+            "bend": -12
+          },
+          {
+            "day": 4,
+            "dayId": "day-4",
+            "color": "#209aaa",
+            "placeIds": [
+              "place-dali",
+              "place-lijiang"
+            ],
+            "bend": -12
+          },
+          {
+            "day": 7,
+            "dayId": "day-7",
+            "color": "#397dc1",
+            "placeIds": [
+              "place-lijiang",
+              "place-shangri-la"
+            ],
+            "bend": 12
+          },
+          {
+            "day": 8,
+            "dayId": "day-8",
+            "color": "#e77e22",
+            "placeIds": [
+              "place-shangri-la",
+              "place-kunming"
+            ],
+            "bend": -12
+          }
         ],
         "dailyLayouts": {
           "2": {
+            "dayId": "day-2",
             "places": [
-              "kunming",
-              "dali"
+              "place-kunming",
+              "place-dali"
             ],
             "labels": {
-              "kunming": {
-                "x": 1084.32,
-                "y": 696.8,
+              "place-kunming": {
+                "x": 831.68,
+                "y": 549.89,
                 "anchor": "start"
               },
-              "dali": {
-                "x": 691.68,
-                "y": 611.87,
-                "anchor": "end"
+              "place-dali": {
+                "x": 577.18,
+                "y": 484.71,
+                "anchor": "start"
               }
             },
             "transport": [
               {
-                "items": [],
-                "x": 888,
-                "y": 686.34
+                "type": "rail",
+                "itemIds": [
+                  "item-transfer-kunming-dali"
+                ],
+                "transportIds": [
+                  "transport-kunming-dali"
+                ],
+                "x": 682.43,
+                "y": 535.3
               }
-            ]
+            ],
+            "viewport": {
+              "x": 483.92,
+              "y": 386.41,
+              "width": 397.03,
+              "height": 297.77
+            }
           },
           "4": {
+            "dayId": "day-4",
             "places": [
-              "dali",
-              "lijiang"
+              "place-dali",
+              "place-lijiang"
             ],
             "labels": {
-              "dali": {
-                "x": 691.68,
-                "y": 611.87,
-                "anchor": "end"
+              "place-dali": {
+                "x": 577.18,
+                "y": 484.71,
+                "anchor": "start"
               },
-              "lijiang": {
-                "x": 796.62,
-                "y": 392.49,
+              "place-lijiang": {
+                "x": 573.26,
+                "y": 339.39,
                 "anchor": "start"
               }
             },
             "transport": [
               {
-                "items": [],
-                "x": 721.15,
-                "y": 549.18
+                "type": "car",
+                "itemIds": [
+                  "item-transfer-dali-lijiang"
+                ],
+                "transportIds": [
+                  "transport-dali-lijiang"
+                ],
+                "x": 553.22,
+                "y": 430.05
               }
-            ]
+            ],
+            "viewport": {
+              "x": 384.34,
+              "y": 303.39,
+              "width": 337.76,
+              "height": 253.32
+            }
           },
           "7": {
+            "dayId": "day-7",
             "places": [
-              "lijiang",
-              "shangri-la"
+              "place-lijiang",
+              "place-shangri-la"
             ],
             "labels": {
-              "lijiang": {
-                "x": 796.62,
-                "y": 392.49,
+              "place-lijiang": {
+                "x": 573.26,
+                "y": 339.39,
                 "anchor": "start"
               },
-              "shangri-la": {
-                "x": 569.68,
-                "y": 249.2,
-                "anchor": "end"
+              "place-shangri-la": {
+                "x": 518.33,
+                "y": 229.43,
+                "anchor": "start"
               }
             },
             "transport": [
               {
-                "items": [],
-                "x": 683.15,
-                "y": 382.85
+                "type": "car",
+                "itemIds": [
+                  "item-transfer-lijiang-shangrila"
+                ],
+                "transportIds": [
+                  "transport-lijiang-shangrila"
+                ],
+                "x": 523.8,
+                "y": 302.41
               }
-            ]
+            ],
+            "viewport": {
+              "x": 378.49,
+              "y": 193.43,
+              "width": 290.61,
+              "height": 217.96
+            }
           },
           "8": {
+            "dayId": "day-8",
             "places": [
-              "shangri-la",
-              "kunming"
+              "place-shangri-la",
+              "place-kunming"
             ],
             "labels": {
-              "shangri-la": {
-                "x": 569.68,
-                "y": 249.2,
-                "anchor": "end"
+              "place-shangri-la": {
+                "x": 518.33,
+                "y": 229.43,
+                "anchor": "start"
               },
-              "kunming": {
-                "x": 1084.32,
-                "y": 696.8,
+              "place-kunming": {
+                "x": 831.68,
+                "y": 549.89,
                 "anchor": "start"
               }
             },
             "transport": [
               {
-                "items": [],
-                "x": 850,
-                "y": 520
+                "type": "rail",
+                "itemIds": [
+                  "item-transfer-shangrila-kunming"
+                ],
+                "transportIds": [
+                  "transport-shangrila-kunming"
+                ],
+                "x": 653,
+                "y": 407.66
               }
-            ]
+            ],
+            "viewport": {
+              "x": 319.73,
+              "y": 157.7,
+              "width": 666.54,
+              "height": 499.91
+            }
           }
-        }
+        },
+        "provenance": {
+          "boundarySource": "geoBoundaries gbOpen CHN ADM1 simplified",
+          "boundaryLicense": "CC BY 4.0",
+          "boundarySha256": "3fa63a0d1b5b0a99c73062a7b596fec890c716b5add71e4ba036aa8bc56568d2",
+          "generator": "scripts/generate-map-package.mjs"
+        },
+        "layoutWarnings": []
       }
     ]
   }
