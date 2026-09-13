@@ -1,0 +1,1065 @@
+{
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": false,
+      "overview": true,
+      "itinerary": true,
+      "todo": false,
+      "driving": false,
+      "ledger": true
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "yunnan-trip-2026",
+    "title": "Yunnan Trip 2026",
+    "language": "zh-CN",
+    "timeZone": "Asia/Shanghai",
+    "assets": {
+      "routeMaps": [
+        "assets/maps/templates/template-06-upland-basin.webp"
+      ]
+    }
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-29",
+    "dayCount": 9,
+    "nightCountAway": 8,
+    "countries": [
+      {
+        "code": "CN",
+        "name": "China",
+        "nameZh": "中国",
+        "nameEn": "China"
+      }
+    ],
+    "primaryDestinationCountries": [
+      "CN"
+    ],
+    "primaryDestinationName": "云南",
+    "primaryDestinationNameEn": "YUNNAN",
+    "heroTitle": "云南",
+    "heroEyebrow": "YUNNAN · CHINA",
+    "citiesAndAreas": [
+      "昆明",
+      "大理",
+      "丽江",
+      "香格里拉"
+    ],
+    "routeSummary": "昆明 → 大理 → 丽江 → 虎跳峡 → 香格里拉 → 昆明",
+    "groupSize": null
+  },
+  "flightJourneys": [],
+  "flights": [],
+  "accommodations": [],
+  "groundTransport": {
+    "rentalCar": null,
+    "rentalChecklist": [],
+    "drivingNotes": [],
+    "drivingReferenceLinks": [],
+    "plannedRoadLegs": [],
+    "publicTransitAndRail": [
+      {
+        "id": "rail-kunming-dali",
+        "date": "2026-11-22",
+        "from": "昆明",
+        "to": "大理",
+        "time": "约16:00–17:00",
+        "note": "高铁约2小时，最终以出票时间为准"
+      },
+      {
+        "id": "rail-shangrila-kunming",
+        "date": "2026-11-28",
+        "from": "香格里拉",
+        "to": "昆明",
+        "time": "约17:30",
+        "note": "高铁约5小时，最终以出票时间为准"
+      }
+    ]
+  },
+  "days": [
+    {
+      "id": "day-1",
+      "day": 1,
+      "date": "2026-11-21",
+      "title": "抵达昆明",
+      "locations": [
+        "昆明"
+      ],
+      "schedule": [
+        {
+          "id": "d1-1",
+          "time": "抵达后",
+          "type": "transfer",
+          "text": "昆明机场接机 → 酒店 Check-in / 放行李，根据航班实际抵达时间调整"
+        },
+        {
+          "id": "d1-2",
+          "time": "约19:00",
+          "type": "attraction",
+          "text": "如果时间和体力允许，前往昆明老街吃晚餐、逛街；如果太累可以取消"
+        },
+        {
+          "id": "d1-3",
+          "time": "约20:30",
+          "type": "attraction",
+          "text": "南强街夜市：烤饵块、豆花米线、鲜花饼等；如果太累可以取消"
+        }
+      ],
+      "notes": [
+        "Day 1 行程根据实际航班抵达时间灵活调整。"
+      ]
+    },
+    {
+      "id": "day-2",
+      "day": 2,
+      "date": "2026-11-22",
+      "title": "昆明 → 大理",
+      "locations": [
+        "昆明",
+        "大理"
+      ],
+      "schedule": [
+        {
+          "id": "d2-1",
+          "time": "08:00",
+          "type": "note",
+          "text": "早餐后出发"
+        },
+        {
+          "id": "d2-2",
+          "time": "09:00–11:00",
+          "type": "attraction",
+          "text": "滇池 + 海埂大坝：看湖、喂海鸥、拍照；导游固定行程"
+        },
+        {
+          "id": "d2-3",
+          "time": "11:15–12:30",
+          "type": "attraction",
+          "text": "翠湖公园 / 昆明老街二选一；如果时间不足可删除"
+        },
+        {
+          "id": "d2-4",
+          "time": "12:30–13:30",
+          "type": "restaurant",
+          "text": "午餐"
+        },
+        {
+          "id": "d2-5",
+          "time": "约14:30–15:00",
+          "type": "transfer",
+          "text": "取行李并前往昆明高铁站"
+        },
+        {
+          "id": "d2-6",
+          "time": "约16:00–17:00",
+          "type": "transfer",
+          "text": "昆明 → 大理高铁，车程约2小时；最终以出票时间为准"
+        },
+        {
+          "id": "d2-7",
+          "time": "约18:00–19:00",
+          "type": "check-in",
+          "text": "抵达大理 → 前往酒店 Check-in"
+        },
+        {
+          "id": "d2-8",
+          "time": "约20:00",
+          "type": "walk",
+          "text": "大理古城晚餐 + 夜游：复兴路 → 洋人街 → 五华楼 → 人民路；如果抵达较晚可缩短"
+        }
+      ],
+      "notes": [
+        "高铁时间以最终出票为准。"
+      ]
+    },
+    {
+      "id": "day-3",
+      "day": 3,
+      "date": "2026-11-23",
+      "title": "大理洱海东线",
+      "locations": [
+        "大理",
+        "洱海东线",
+        "双廊"
+      ],
+      "schedule": [
+        {
+          "id": "d3-1",
+          "time": "08:00",
+          "type": "note",
+          "text": "早餐后出发"
+        },
+        {
+          "id": "d3-2",
+          "time": "09:00–10:30",
+          "type": "attraction",
+          "text": "理想邦 / 圣托里尼：白色建筑 + 洱海拍照；导游固定行程"
+        },
+        {
+          "id": "d3-3",
+          "time": "10:50–11:50",
+          "type": "attraction",
+          "text": "文笔村 + 彩虹公路；导游固定行程"
+        },
+        {
+          "id": "d3-4",
+          "time": "12:00–13:00",
+          "type": "restaurant",
+          "text": "午餐"
+        },
+        {
+          "id": "d3-5",
+          "time": "13:30–14:30",
+          "type": "attraction",
+          "text": "挖色镇：湖边散步、拍照；导游固定行程"
+        },
+        {
+          "id": "d3-6",
+          "time": "约14:45",
+          "type": "attraction",
+          "text": "小普陀短暂停留约30分钟；属于加项，如果路线或时间不足可删除"
+        },
+        {
+          "id": "d3-7",
+          "time": "15:30–18:30",
+          "type": "attraction",
+          "text": "双廊古镇：古镇漫步 + 洱海拍照；导游固定行程"
+        },
+        {
+          "id": "d3-8",
+          "time": "18:30–20:00",
+          "type": "restaurant",
+          "text": "双廊晚餐"
+        }
+      ],
+      "notes": [
+        "小普陀为可删除加项，优先保证导游固定行程。"
+      ]
+    },
+    {
+      "id": "day-4",
+      "day": 4,
+      "date": "2026-11-24",
+      "title": "大理洱海西线 → 丽江",
+      "locations": [
+        "大理",
+        "喜洲",
+        "丽江"
+      ],
+      "schedule": [
+        {
+          "id": "d4-1",
+          "time": "08:00",
+          "type": "note",
+          "text": "早餐后出发"
+        },
+        {
+          "id": "d4-2",
+          "time": "08:30–09:45",
+          "type": "attraction",
+          "text": "凤阳邑村：茶马古道 +《去有风的地方》氛围；导游固定行程"
+        },
+        {
+          "id": "d4-3",
+          "time": "10:15–11:00",
+          "type": "attraction",
+          "text": "龙龛码头；推荐加入"
+        },
+        {
+          "id": "d4-4",
+          "time": "11:00–12:00",
+          "type": "attraction",
+          "text": "洱海生态廊道骑行：龙龛 → 磻溪 S 湾方向；优先项目"
+        },
+        {
+          "id": "d4-5",
+          "time": "12:00–12:30",
+          "type": "attraction",
+          "text": "磻溪 S 湾拍照；推荐加入"
+        },
+        {
+          "id": "d4-6",
+          "time": "12:45–13:15",
+          "type": "attraction",
+          "text": "桥边拍照；仅路线方便时进行，可以删除"
+        },
+        {
+          "id": "d4-7",
+          "time": "13:30–14:30",
+          "type": "restaurant",
+          "text": "午餐"
+        },
+        {
+          "id": "d4-8",
+          "time": "14:30–16:30",
+          "type": "attraction",
+          "text": "喜洲古镇：古镇散步、喜洲粑粑、扎染 / 小火车；导游固定行程"
+        },
+        {
+          "id": "d4-9",
+          "time": "约17:00",
+          "type": "attraction",
+          "text": "如果前往丽江前还有时间，可再逛大理古城约1小时；Day 2 已逛足够则删除"
+        },
+        {
+          "id": "d4-10",
+          "time": "晚上",
+          "type": "transfer",
+          "text": "大理出发前往丽江 → 酒店 Check-in"
+        }
+      ],
+      "notes": [
+        "桥边拍照和再次前往大理古城均属于可删除项目。"
+      ]
+    },
+    {
+      "id": "day-5",
+      "day": 5,
+      "date": "2026-11-25",
+      "title": "玉龙雪山登顶 + 蓝月谷",
+      "locations": [
+        "丽江",
+        "玉龙雪山",
+        "蓝月谷"
+      ],
+      "schedule": [
+        {
+          "id": "d5-1",
+          "time": "约07:00",
+          "type": "note",
+          "text": "早餐后尽早出发"
+        },
+        {
+          "id": "d5-2",
+          "time": "约08:00",
+          "type": "attraction",
+          "text": "如果路线经过甘海子，可短暂停留拍玉龙雪山全景；可以删除"
+        },
+        {
+          "id": "d5-3",
+          "time": "上午–约13:00",
+          "type": "attraction",
+          "text": "玉龙雪山冰川公园大索道登顶；实际安排视索道开放及个人身体状况"
+        },
+        {
+          "id": "d5-4",
+          "time": "登顶期间",
+          "type": "attraction",
+          "text": "4680 米打卡点：本日绝对优先项目"
+        },
+        {
+          "id": "d5-5",
+          "time": "约13:00–14:00",
+          "type": "rest",
+          "text": "午餐 + 休息；登顶后不要安排过紧"
+        },
+        {
+          "id": "d5-6",
+          "time": "约14:15–16:00",
+          "type": "attraction",
+          "text": "蓝月谷：玉液湖 → 镜潭湖 → 蓝月湖 → 听涛湖；根据下山时间调整"
+        },
+        {
+          "id": "d5-7",
+          "time": "约17:00–19:00",
+          "type": "attraction",
+          "text": "如果时间允许，前往束河古镇 + 青龙桥并吃晚餐；如索道排队或下山较晚则缩短或取消"
+        }
+      ],
+      "notes": [
+        "4680 米打卡点优先级最高。",
+        "所有安排以索道开放、天气、排队及身体状况为准。"
+      ]
+    },
+    {
+      "id": "day-6",
+      "day": 6,
+      "date": "2026-11-26",
+      "title": "白沙古镇 + 玉湖村 + 龙女湖",
+      "locations": [
+        "丽江",
+        "白沙古镇",
+        "玉湖村",
+        "龙女湖"
+      ],
+      "schedule": [
+        {
+          "id": "d6-1",
+          "time": "08:30",
+          "type": "note",
+          "text": "早餐后出发"
+        },
+        {
+          "id": "d6-2",
+          "time": "09:00–11:30",
+          "type": "attraction",
+          "text": "白沙古镇：慢逛、雪山背景拍照；可去雪山咖啡 / 见山小院一带；导游固定行程"
+        },
+        {
+          "id": "d6-3",
+          "time": "11:30–12:30",
+          "type": "restaurant",
+          "text": "白沙古镇午餐"
+        },
+        {
+          "id": "d6-4",
+          "time": "13:00–15:00",
+          "type": "attraction",
+          "text": "玉湖村：石头村 + 雪山脚风景；朋友推荐"
+        },
+        {
+          "id": "d6-5",
+          "time": "15:00–16:30",
+          "type": "attraction",
+          "text": "龙女湖散步拍照；骑马可到现场再决定"
+        },
+        {
+          "id": "d6-6",
+          "time": "约17:30",
+          "type": "return",
+          "text": "返回丽江古城"
+        },
+        {
+          "id": "d6-7",
+          "time": "18:00–21:30",
+          "type": "walk",
+          "text": "丽江古城夜游：忠义市场 → 木府 → 三眼井 → 四方街 → 大石桥 → 大水车 / 观景台；自由活动，累了可缩短"
+        }
+      ],
+      "notes": [
+        "龙女湖骑马到现场再决定，不作为固定行程。"
+      ]
+    },
+    {
+      "id": "day-7",
+      "day": 7,
+      "date": "2026-11-27",
+      "title": "丽江 → 虎跳峡 → 香格里拉",
+      "locations": [
+        "丽江",
+        "虎跳峡",
+        "香格里拉"
+      ],
+      "schedule": [
+        {
+          "id": "d7-1",
+          "time": "07:30",
+          "type": "check-out",
+          "text": "早餐、Check-out 后出发"
+        },
+        {
+          "id": "d7-2",
+          "time": "上午",
+          "type": "transfer",
+          "text": "丽江出发前往虎跳峡；实际时间根据路况调整"
+        },
+        {
+          "id": "d7-3",
+          "time": "约10:00–12:00",
+          "type": "attraction",
+          "text": "虎跳峡；导游固定行程"
+        },
+        {
+          "id": "d7-4",
+          "time": "12:00–13:00",
+          "type": "restaurant",
+          "text": "午餐"
+        },
+        {
+          "id": "d7-5",
+          "time": "下午",
+          "type": "transfer",
+          "text": "继续前往香格里拉 → 酒店 Check-in；根据路况调整"
+        },
+        {
+          "id": "d7-6",
+          "time": "约17:00–19:00",
+          "type": "attraction",
+          "text": "独克宗古城逛街 + 晚餐；导游固定行程"
+        },
+        {
+          "id": "d7-7",
+          "time": "19:00–20:30",
+          "type": "walk",
+          "text": "月光广场 → 龟山公园 → 大佛寺转经筒；均在同一区域"
+        }
+      ],
+      "notes": [
+        "丽江至香格里拉车程受道路和交通状况影响。"
+      ]
+    },
+    {
+      "id": "day-8",
+      "day": 8,
+      "date": "2026-11-28",
+      "title": "香格里拉 → 昆明",
+      "locations": [
+        "香格里拉",
+        "昆明"
+      ],
+      "schedule": [
+        {
+          "id": "d8-1",
+          "time": "08:00",
+          "type": "note",
+          "text": "早餐后出发"
+        },
+        {
+          "id": "d8-2",
+          "time": "08:30–11:00",
+          "type": "attraction",
+          "text": "松赞林寺参观、拍照；导游固定行程"
+        },
+        {
+          "id": "d8-3",
+          "time": "松赞林寺期间",
+          "type": "attraction",
+          "text": "如果安排藏服写真，最好放在松赞林寺时段；需确认化妆 + 拍摄时间，必要时缩短其他安排"
+        },
+        {
+          "id": "d8-4",
+          "time": "11:30–12:30",
+          "type": "restaurant",
+          "text": "午餐"
+        },
+        {
+          "id": "d8-5",
+          "time": "13:00–15:30",
+          "type": "attraction",
+          "text": "纳帕海环湖：草原、湖景、经幡；骑马 / 小羊互动现场决定；注意不要拖到太晚"
+        },
+        {
+          "id": "d8-6",
+          "time": "约15:45–16:15",
+          "type": "transfer",
+          "text": "结束游览、取行李，前往香格里拉站；预留进站时间"
+        },
+        {
+          "id": "d8-7",
+          "time": "约17:30",
+          "type": "transfer",
+          "text": "香格里拉 → 昆明高铁，约5小时；最终以出票时间为准"
+        },
+        {
+          "id": "d8-8",
+          "time": "约22:30后",
+          "type": "check-in",
+          "text": "抵达昆明 → 酒店 Check-in → 休息，不再安排活动"
+        }
+      ],
+      "notes": [
+        "当天重点是不要错过返回昆明的高铁。",
+        "高铁时间以最终出票为准。"
+      ]
+    },
+    {
+      "id": "day-9",
+      "day": 9,
+      "date": "2026-11-29",
+      "title": "昆明 → 返程",
+      "locations": [
+        "昆明"
+      ],
+      "schedule": [
+        {
+          "id": "d9-1",
+          "time": "上午",
+          "type": "check-out",
+          "text": "早餐、整理行李、酒店 Check-out"
+        },
+        {
+          "id": "d9-2",
+          "time": "如航班较晚",
+          "type": "shopping",
+          "text": "可在酒店附近购买伴手礼：鲜花饼、云南咖啡、茶叶；不安排远距离景点"
+        },
+        {
+          "id": "d9-3",
+          "time": "按航班时间",
+          "type": "transfer",
+          "text": "前往昆明机场；导游送机"
+        }
+      ],
+      "notes": [
+        "返程日以航班时间为优先，不安排远距离活动。"
+      ]
+    }
+  ],
+  "places": [],
+  "restaurants": [],
+  "bookingsAndTickets": [],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票状态默认只保存在当前浏览器。",
+    "items": []
+  },
+  "preTrip": {
+    "packingItems": [],
+    "preparationsExplicitlyMentioned": [],
+    "missingNote": ""
+  },
+  "mapLinks": {
+    "providedGoogleMapsLinks": [],
+    "note": "",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": [
+        "flight",
+        "note",
+        "rest"
+      ],
+      "selfNavigationTypes": [
+        "drive",
+        "return",
+        "transfer",
+        "check-in",
+        "check-out",
+        "restaurant",
+        "attraction",
+        "walk",
+        "hike"
+      ]
+    },
+    "navigationPlaces": []
+  },
+  "issuesAndUncertainties": [
+    "所有时间主要用于规划行程密度，并非硬性时间。",
+    "天气、交通、排队、索道调度、高铁时间变化、拍照时间及体力状况都可能导致行程调整。",
+    "如有变化，与导游沟通后优先保留导游包含项目，并缩短或删除加项，避免影响转场及交通。",
+    "总费用为人民币 17151 元，不包含午餐及晚餐；已付订金人民币 4000 元（约 MYR 2484.06）；余额人民币 13151 元。"
+  ],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "region": {
+      "id": "yunnan",
+      "label": "云南",
+      "countryCode": "CN"
+    },
+    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "places": [
+      {
+        "id": "kunming",
+        "name": "Kunming",
+        "nameZh": "昆明",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 25.0389,
+          "lng": 102.7183
+        },
+        "days": [
+          1,
+          2,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "dali",
+        "name": "Dali",
+        "nameZh": "大理",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 25.6065,
+          "lng": 100.2676
+        },
+        "days": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "lijiang",
+        "name": "Lijiang",
+        "nameZh": "丽江",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 26.8721,
+          "lng": 100.2299
+        },
+        "days": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "shangri-la",
+        "name": "Shangri-La",
+        "nameZh": "香格里拉",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 27.8297,
+          "lng": 99.7009
+        },
+        "days": [
+          7,
+          8
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "day": 2,
+        "placeIds": [
+          "kunming",
+          "dali"
+        ]
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "dali",
+          "lijiang"
+        ]
+      },
+      {
+        "day": 7,
+        "placeIds": [
+          "lijiang",
+          "shangri-la"
+        ]
+      },
+      {
+        "day": 8,
+        "placeIds": [
+          "shangri-la",
+          "kunming"
+        ]
+      }
+    ],
+    "dailyRoutes": []
+  },
+  "routeMap": {
+    "defaultRegionId": "yunnan",
+    "regions": [
+      {
+        "id": "yunnan",
+        "label": "云南",
+        "countryCode": "CN",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "upland-basin",
+        "mapModeReason": "balanced-or-east-west-route",
+        "mapModeMetrics": {
+          "placeCount": 4,
+          "geoPlaceCount": 4,
+          "widthKm": 300.17,
+          "heightKm": 309.78,
+          "spanKm": 431.89,
+          "averageNearestKm": 158.07,
+          "components": 1,
+          "largestLegKm": 431.89,
+          "jumpRatio": 1.7
+        },
+        "days": [
+          2,
+          4,
+          7,
+          8
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-06-upland-basin.webp",
+        "title": "云南 · 旅行路线",
+        "ariaLabel": "云南模板化旅行路线示意图，共4天",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "云南",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 2,
+            "color": "#e77e22",
+            "placeIds": [
+              "kunming",
+              "dali"
+            ],
+            "paths": [
+              "M1052.32 728.8 C948.1 670.9 836.4 642.0 723.68 643.87"
+            ],
+            "overviewPaths": [
+              "M1052.32 728.8 C948.1 670.9 836.4 642.0 723.68 643.87"
+            ]
+          },
+          {
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "dali",
+              "lijiang"
+            ],
+            "paths": [
+              "M723.68 643.87 C740.9 579.0 739.2 514.6 718.62 454.49"
+            ],
+            "overviewPaths": [
+              "M723.68 643.87 C740.9 579.0 739.2 514.6 718.62 454.49"
+            ]
+          },
+          {
+            "day": 7,
+            "color": "#397dc1",
+            "placeIds": [
+              "lijiang",
+              "shangri-la"
+            ],
+            "paths": [
+              "M718.62 454.49 C680.2 412.9 656.1 364.1 647.68 311.2"
+            ],
+            "overviewPaths": [
+              "M718.62 454.49 C680.2 412.9 656.1 364.1 647.68 311.2"
+            ]
+          },
+          {
+            "day": 8,
+            "color": "#e77e22",
+            "placeIds": [
+              "shangri-la",
+              "kunming"
+            ],
+            "paths": [
+              "M647.68 311.2 C763.7 474.1 901.3 616.0 1052.32 728.8"
+            ],
+            "overviewPaths": [
+              "M647.68 311.2 C763.7 474.1 901.3 616.0 1052.32 728.8"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "kunming",
+            "x": 1052.32,
+            "y": 728.8,
+            "color": "#397dc1",
+            "tx": 1084.32,
+            "ty": 696.8,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Kunming /",
+              "昆明"
+            ],
+            "query": "Kunming 云南",
+            "geo": {
+              "lat": 25.0389,
+              "lng": 102.7183
+            },
+            "days": [
+              1,
+              2,
+              8,
+              9
+            ]
+          },
+          {
+            "id": "dali",
+            "x": 723.68,
+            "y": 643.87,
+            "color": "#e77e22",
+            "tx": 691.68,
+            "ty": 611.87,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Dali /",
+              "大理"
+            ],
+            "query": "Dali 云南",
+            "geo": {
+              "lat": 25.6065,
+              "lng": 100.2676
+            },
+            "days": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "lijiang",
+            "x": 718.62,
+            "y": 454.49,
+            "color": "#209aaa",
+            "tx": 796.62,
+            "ty": 392.49,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Lijiang /",
+              "丽江"
+            ],
+            "query": "Lijiang 云南",
+            "geo": {
+              "lat": 26.8721,
+              "lng": 100.2299
+            },
+            "days": [
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "id": "shangri-la",
+            "x": 647.68,
+            "y": 311.2,
+            "color": "#397dc1",
+            "tx": 569.68,
+            "ty": 249.2,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Shangri-La /",
+              "香格里拉"
+            ],
+            "query": "Shangri-La 云南",
+            "geo": {
+              "lat": 27.8297,
+              "lng": 99.7009
+            },
+            "days": [
+              7,
+              8
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "kunming",
+          "dali",
+          "lijiang",
+          "shangri-la"
+        ],
+        "dailyLayouts": {
+          "2": {
+            "places": [
+              "kunming",
+              "dali"
+            ],
+            "labels": {
+              "kunming": {
+                "x": 1084.32,
+                "y": 696.8,
+                "anchor": "start"
+              },
+              "dali": {
+                "x": 691.68,
+                "y": 611.87,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 888,
+                "y": 686.34
+              }
+            ]
+          },
+          "4": {
+            "places": [
+              "dali",
+              "lijiang"
+            ],
+            "labels": {
+              "dali": {
+                "x": 691.68,
+                "y": 611.87,
+                "anchor": "end"
+              },
+              "lijiang": {
+                "x": 796.62,
+                "y": 392.49,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 721.15,
+                "y": 549.18
+              }
+            ]
+          },
+          "7": {
+            "places": [
+              "lijiang",
+              "shangri-la"
+            ],
+            "labels": {
+              "lijiang": {
+                "x": 796.62,
+                "y": 392.49,
+                "anchor": "start"
+              },
+              "shangri-la": {
+                "x": 569.68,
+                "y": 249.2,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 683.15,
+                "y": 382.85
+              }
+            ]
+          },
+          "8": {
+            "places": [
+              "shangri-la",
+              "kunming"
+            ],
+            "labels": {
+              "shangri-la": {
+                "x": 569.68,
+                "y": 249.2,
+                "anchor": "end"
+              },
+              "kunming": {
+                "x": 1084.32,
+                "y": 696.8,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 850,
+                "y": 520
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
