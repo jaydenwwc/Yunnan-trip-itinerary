@@ -315,6 +315,9 @@ function flightCard(journey, index) {
         <span>FLIGHT ${String(index + 1).padStart(2, "0")} / ${String(state.data.flightJourneys.length).padStart(2, "0")}</span>
       </div>
       <div class="flight-card__airlines">${escapeHtml([...new Set(flights.map((flight) => flight.airline.nameZh || flight.airline.name))].join(" · "))}</div>
+      ${Array.isArray(journey.passengers) && journey.passengers.length
+        ? `<div class="flight-card__passengers">乘客 · ${escapeHtml(journey.passengers.join(" · "))}</div>`
+        : ""}
       <div class="flight-flow" style="--route-columns: ${stops.map((_, stopIndex) => stopIndex < stops.length - 1 ? "minmax(0,1fr) minmax(34px,.5fr)" : "minmax(0,1fr)").join(" ")}">
         ${routeItems.join("")}
       </div>
