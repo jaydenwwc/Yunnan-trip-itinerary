@@ -455,3 +455,143 @@ button:focus-visible,a:focus-visible {outline:2px solid var(--lake);outline-offs
   font-weight: 650;
   line-height: 1.4;
 }
+
+
+/* ===== Theme switcher ===== */
+
+.theme-toggle {
+  width: 34px;
+  height: 34px;
+  margin-left: 8px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  transition:
+    background-color .2s ease,
+    border-color .2s ease,
+    color .2s ease,
+    transform .2s ease;
+}
+
+.theme-toggle:active {
+  transform: scale(.94);
+}
+
+.theme-toggle__icon {
+  font-size: 17px;
+  line-height: 1;
+}
+
+
+/* Dark theme */
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --paper: #111719;
+  --ink: #e9f0f0;
+  --muted: #9baaaa;
+  --line: #2b393d;
+
+  --lake: #6daaba;
+  --lake-soft: #19343b;
+  --forest: #90aa98;
+  --terracotta: #df8060;
+  --warning: #d59a68;
+
+  --shadow: 0 16px 48px rgba(0, 0, 0, .28);
+}
+
+html[data-theme="dark"] body {
+  background:
+    linear-gradient(rgba(109, 170, 186, .035) 1px, transparent 1px),
+    var(--paper);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .topbar {
+  background: rgba(17, 23, 25, .92);
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .travel-navigation-menu {
+  background: #182124;
+  border-color: var(--line);
+  box-shadow: var(--shadow);
+}
+
+html[data-theme="dark"] .theme-toggle:hover {
+  background: #1d292c;
+}
+
+/* Light cards and panels */
+html[data-theme="dark"] .hero,
+html[data-theme="dark"] .section,
+html[data-theme="dark"] .ledger-panel,
+html[data-theme="dark"] .ledger-card,
+html[data-theme="dark"] .ledger-form,
+html[data-theme="dark"] .ledger-summary {
+  border-color: var(--line);
+}
+
+/* Inputs used by ledger */
+html[data-theme="dark"] input,
+html[data-theme="dark"] select,
+html[data-theme="dark"] textarea {
+  color: var(--ink);
+  background: #182124;
+  border-color: #334448;
+}
+
+/* Keep the existing dark flight cards visually distinct */
+html[data-theme="dark"] .flight-card {
+  background: #0b252f;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, .3);
+}
+
+/* Smooth visual change */
+html,
+body,
+.topbar,
+.theme-toggle,
+input,
+select,
+textarea {
+  transition:
+    background-color .2s ease,
+    color .2s ease,
+    border-color .2s ease;
+}
+
+/* ===== Dark route controls ===== */
+
+html[data-theme="dark"] .route-region-tabs button,
+html[data-theme="dark"] .route-day-tabs button {
+  color: #dbe5e7;
+  background: #1a272b;
+  border: 1px solid #3a4b50;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .route-region-tabs button[aria-pressed="true"],
+html[data-theme="dark"] .route-day-tabs button[aria-pressed="true"] {
+  color: #ffffff;
+  background: #147fc4;
+  border-color: #69b9df;
+  box-shadow: 0 0 0 1px rgba(105, 185, 223, .18);
+}
+
+html[data-theme="dark"] .route-region-tabs button:hover,
+html[data-theme="dark"] .route-day-tabs button:hover {
+  color: #ffffff;
+  border-color: #6c858c;
+}
+
+/* 日期按钮保留各自的彩色圆点 */
+html[data-theme="dark"] .route-day-tabs button i {
+  opacity: 1;
+}
