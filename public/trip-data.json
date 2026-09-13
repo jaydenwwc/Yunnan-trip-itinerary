@@ -13,7 +13,10 @@
     },
     "language": "zh-CN",
     "persistence": {
-      "mode": "local"
+      "mode": "d1",
+      "sharedCollections": [
+        "ledger"
+      ]
     }
   },
   "metadata": {

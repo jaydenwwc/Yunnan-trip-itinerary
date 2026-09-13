@@ -1,8 +1,16 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "yunnan-trip-2026",
+  "main": "worker.js",
   "compatibility_date": "2026-09-13",
   "assets": {
     "directory": "./public"
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "yunnan-trip-ledger",
+      "database_id": "1295ba84-1e0e-4c00-a1ca-9bf1c7dcb4f1"
+    }
+  ]
 }
