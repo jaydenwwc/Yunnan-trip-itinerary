@@ -543,3 +543,58 @@ html[data-theme="dark"] .topbar .travel-navigation-menu a:active {
   background: #27434b;
 }
 
+
+/* ===== Ledger dark mode refinements ===== */
+html[data-theme="dark"] .ledger-currency-dropdown summary,
+html[data-theme="dark"] .ledger-field-amount .ledger-amount-input,
+html[data-theme="dark"] .ledger-converted-input-wrap {
+  color: #e8f0f1;
+  background: #172a31;
+  border-color: rgba(255,255,255,.14);
+}
+
+html[data-theme="dark"] .ledger-currency-dropdown summary > span:last-child {
+  color: #91a3a7;
+}
+
+html[data-theme="dark"] .ledger-currency-menu {
+  background: #132329;
+  border-color: rgba(255,255,255,.12);
+  box-shadow: 0 14px 32px rgba(0,0,0,.30);
+}
+
+html[data-theme="dark"] .ledger-currency-option {
+  color: #dce6e8;
+}
+
+html[data-theme="dark"] .ledger-currency-option:hover,
+html[data-theme="dark"] .ledger-currency-option[aria-current="true"] {
+  color: #9bd8e2;
+  background: #17333b;
+}
+
+html[data-theme="dark"] .ledger-transfer-row,
+html[data-theme="dark"] .ledger-member-stat {
+  background: #132329;
+  border-color: rgba(255,255,255,.10);
+  box-shadow: 0 10px 26px rgba(0,0,0,.22);
+}
+
+html[data-theme="dark"] .ledger-transfer-row + .ledger-transfer-row,
+html[data-theme="dark"] .ledger-member-stat + .ledger-member-stat {
+  border-top-color: rgba(255,255,255,.10);
+}
+
+html[data-theme="dark"] .ledger-member-chevron {
+  color: #dce6e8;
+}
+
+html[data-theme="dark"] .ledger-bill-note-form input {
+  color: #e8f0f1;
+  background: #172a31;
+  border-color: rgba(255,255,255,.14);
+}
+
+html[data-theme="dark"] .ledger-bill-note-trigger:hover {
+  background: #17282e;
+}
