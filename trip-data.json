@@ -1,74 +1,518 @@
 {
   "$schema": "./schemas/trip-data.schema.json",
   "schemaVersion": "2.0-lite",
+
   "config": {
     "schemaVersion": "1.0.0",
     "modules": {
       "flights": false,
-      "overview": false,
-      "itinerary": false,
+      "overview": true,
+      "itinerary": true,
       "todo": false,
       "driving": false,
-      "ledger": false
+      "ledger": true
     },
     "language": "zh-CN",
     "persistence": {
       "mode": "local"
     }
   },
+
   "metadata": {
-    "tripId": "unconfigured",
-    "title": "旅行计划",
+    "tripId": "yunnan-trip-2026",
+    "title": "云南旅行 2026",
     "language": "zh-CN",
     "assets": {}
   },
+
   "trip": {
-    "status": "uninitialized",
-    "startDate": null,
-    "endDate": null,
-    "dayCount": 0,
-    "nightCountAway": 0,
-    "countries": [],
-    "primaryDestinationCountries": [],
-    "citiesAndAreas": [],
-    "routeSummary": "",
+    "status": "planned",
+    "startDate": "2026-11-21",
+    "endDate": "2026-11-29",
+    "dayCount": 9,
+    "nightCountAway": 8,
+    "countries": ["中国"],
+    "primaryDestinationCountries": ["CN"],
+    "citiesAndAreas": ["昆明", "大理", "丽江", "香格里拉"],
+    "routeSummary": "昆明 → 大理 → 丽江 → 香格里拉 → 昆明",
     "groupSize": null
   },
+
   "flightJourneys": [],
   "flights": [],
   "accommodations": [],
+
   "groundTransport": {
     "rentalCar": null,
     "rentalChecklist": [],
     "drivingNotes": [],
     "drivingReferenceLinks": [],
     "plannedRoadLegs": [],
-    "publicTransitAndRail": []
+    "publicTransitAndRail": [
+      {
+        "date": "2026-11-22",
+        "route": "昆明 → 大理",
+        "mode": "高铁",
+        "time": "约 4:00 PM - 5:00 PM",
+        "note": "最终以出票时间为准"
+      },
+      {
+        "date": "2026-11-28",
+        "route": "香格里拉 → 昆明",
+        "mode": "高铁",
+        "time": "约 5:30 PM",
+        "note": "车程约 5 小时，最终以出票时间为准"
+      }
+    ]
   },
-  "days": [],
+
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-11-21",
+      "title": "昆明抵达",
+      "city": "昆明",
+      "schedule": [
+        {
+          "time": "抵达后",
+          "title": "昆明接机 → 酒店入住、放行李",
+          "type": "transfer",
+          "note": "按航班实际抵达时间调整"
+        },
+        {
+          "time": "约 7:00 PM",
+          "title": "昆明老街晚餐＋逛街",
+          "type": "food",
+          "note": "如果时间和体力允许；可删"
+        },
+        {
+          "time": "约 8:30 PM",
+          "title": "南强街夜市",
+          "type": "food",
+          "note": "烤饵块、豆花米线、鲜花饼等；如太累可直接取消"
+        }
+      ]
+    },
+
+    {
+      "day": 2,
+      "date": "2026-11-22",
+      "title": "昆明 → 大理",
+      "city": "昆明 → 大理",
+      "schedule": [
+        {
+          "time": "8:00 AM",
+          "title": "早餐后出发",
+          "type": "transfer"
+        },
+        {
+          "time": "9:00 AM - 11:00 AM",
+          "title": "滇池＋海埂大坝",
+          "type": "attraction",
+          "note": "看滇池、喂海鸥、拍照；导游固定"
+        },
+        {
+          "time": "11:15 AM - 12:30 PM",
+          "title": "翠湖公园 / 昆明老街二选一",
+          "type": "attraction",
+          "note": "高铁时间约 4–5 PM；时间不够就删"
+        },
+        {
+          "time": "12:30 PM - 1:30 PM",
+          "title": "午餐",
+          "type": "food"
+        },
+        {
+          "time": "约 2:30 PM - 3:00 PM",
+          "title": "拿行李 / 整理后前往高铁站",
+          "type": "transfer"
+        },
+        {
+          "time": "约 4:00 PM - 5:00 PM",
+          "title": "昆明 → 大理高铁",
+          "type": "train",
+          "note": "车程约 2 小时，最终以出票时间为准"
+        },
+        {
+          "time": "约 6:00 PM - 7:00 PM",
+          "title": "抵达大理 → 酒店入住",
+          "type": "check-in"
+        },
+        {
+          "time": "约 8:00 PM",
+          "title": "大理古城晚餐＋夜游",
+          "type": "attraction",
+          "note": "复兴路 → 洋人街 → 五华楼 → 人民路；如抵达太晚可缩短"
+        }
+      ]
+    },
+
+    {
+      "day": 3,
+      "date": "2026-11-23",
+      "title": "大理洱海东线",
+      "city": "大理",
+      "schedule": [
+        {
+          "time": "8:00 AM",
+          "title": "早餐后出发",
+          "type": "transfer"
+        },
+        {
+          "time": "9:00 AM - 10:30 AM",
+          "title": "理想邦 / 圣托里尼",
+          "type": "attraction",
+          "note": "白色建筑＋洱海拍照；导游固定 / 朋友也去"
+        },
+        {
+          "time": "10:50 AM - 11:50 AM",
+          "title": "文笔村＋彩虹公路",
+          "type": "attraction",
+          "note": "导游固定 / 朋友也去"
+        },
+        {
+          "time": "12:00 PM - 1:00 PM",
+          "title": "午餐",
+          "type": "food"
+        },
+        {
+          "time": "1:30 PM - 2:30 PM",
+          "title": "挖色镇",
+          "type": "attraction",
+          "note": "沿湖走走拍照；导游固定"
+        },
+        {
+          "time": "约 2:45 PM",
+          "title": "小普陀",
+          "type": "attraction",
+          "note": "短停约 30 分钟；路线不顺或时间不够就删"
+        },
+        {
+          "time": "3:30 PM - 6:30 PM",
+          "title": "双廊古镇",
+          "type": "attraction",
+          "note": "逛古镇＋洱海边拍照；导游固定"
+        },
+        {
+          "time": "6:30 PM - 8:00 PM",
+          "title": "双廊晚餐",
+          "type": "food"
+        }
+      ]
+    },
+
+    {
+      "day": 4,
+      "date": "2026-11-24",
+      "title": "大理洱海西线 → 丽江",
+      "city": "大理 → 丽江",
+      "schedule": [
+        {
+          "time": "8:00 AM",
+          "title": "早餐后出发",
+          "type": "transfer"
+        },
+        {
+          "time": "8:30 AM - 9:45 AM",
+          "title": "凤阳邑村",
+          "type": "attraction",
+          "note": "茶马古道＋《去有风的地方》取景氛围；导游固定"
+        },
+        {
+          "time": "10:15 AM - 11:00 AM",
+          "title": "龙龛码头",
+          "type": "attraction",
+          "note": "建议加"
+        },
+        {
+          "time": "11:00 AM - 12:00 PM",
+          "title": "生态廊道骑行",
+          "type": "activity",
+          "note": "建议龙龛码头 → 磻溪 S 湾方向；优先争取"
+        },
+        {
+          "time": "12:00 PM - 12:30 PM",
+          "title": "磻溪 S 湾拍照",
+          "type": "attraction",
+          "note": "建议加"
+        },
+        {
+          "time": "12:45 PM - 1:15 PM",
+          "title": "廊桥短停拍照",
+          "type": "attraction",
+          "note": "路线顺才去，可删"
+        },
+        {
+          "time": "1:30 PM - 2:30 PM",
+          "title": "午餐",
+          "type": "food"
+        },
+        {
+          "time": "2:30 PM - 4:30 PM",
+          "title": "喜洲古镇",
+          "type": "attraction",
+          "note": "逛古镇、喜洲粑粑、扎染 / 小火车；导游固定"
+        },
+        {
+          "time": "约 5:00 PM",
+          "title": "大理古城",
+          "type": "attraction",
+          "note": "如去丽江时间允许，可补约 1 小时；Day 2 已逛够就删"
+        },
+        {
+          "time": "傍晚 / 晚上",
+          "title": "出发前往丽江 → 入住",
+          "type": "transfer"
+        }
+      ]
+    },
+
+    {
+      "day": 5,
+      "date": "2026-11-25",
+      "title": "玉龙雪山登顶＋蓝月谷",
+      "city": "丽江",
+      "schedule": [
+        {
+          "time": "约 7:00 AM",
+          "title": "早餐后尽早出发前往玉龙雪山",
+          "type": "transfer",
+          "note": "登顶日，建议尽早出发"
+        },
+        {
+          "time": "约 8:00 AM",
+          "title": "甘海子",
+          "type": "attraction",
+          "note": "若路线经过，可短停拍玉龙雪山全景；可删"
+        },
+        {
+          "time": "上午 - 约 1:00 PM",
+          "title": "玉龙雪山登顶：冰川公园大索道",
+          "type": "attraction",
+          "note": "按景区开放情况及个人体力前往；4680m 打卡点为当天绝对优先项目"
+        },
+        {
+          "time": "约 1:00 PM - 2:00 PM",
+          "title": "午餐＋休息",
+          "type": "food",
+          "note": "登顶后不要排太紧"
+        },
+        {
+          "time": "约 2:15 PM - 4:00 PM",
+          "title": "蓝月谷",
+          "type": "attraction",
+          "note": "玉液湖 → 镜潭湖 → 蓝月湖 → 听涛湖；按实际下山时间调整"
+        },
+        {
+          "time": "约 5:00 PM - 7:00 PM",
+          "title": "束河古镇＋青龙桥",
+          "type": "attraction",
+          "note": "若时间允许；索道排队或下山晚就缩短 / 删除"
+        }
+      ]
+    },
+
+    {
+      "day": 6,
+      "date": "2026-11-26",
+      "title": "白沙古镇＋玉湖村＋龙女湖",
+      "city": "丽江",
+      "schedule": [
+        {
+          "time": "8:30 AM",
+          "title": "早餐后出发",
+          "type": "transfer"
+        },
+        {
+          "time": "9:00 AM - 11:30 AM",
+          "title": "白沙古镇",
+          "type": "attraction",
+          "note": "慢逛、拍雪山背景，可找雪山咖啡 / 见山小院一带；导游固定"
+        },
+        {
+          "time": "11:30 AM - 12:30 PM",
+          "title": "白沙古镇午餐",
+          "type": "food"
+        },
+        {
+          "time": "1:00 PM - 3:00 PM",
+          "title": "玉湖村",
+          "type": "attraction",
+          "note": "石头村落、雪山脚下景色；朋友路线也推荐"
+        },
+        {
+          "time": "3:00 PM - 4:30 PM",
+          "title": "龙女湖",
+          "type": "attraction",
+          "note": "散步拍照；有兴趣可现场询问骑马"
+        },
+        {
+          "time": "约 5:30 PM",
+          "title": "返回丽江古城",
+          "type": "transfer"
+        },
+        {
+          "time": "6:00 PM - 9:30 PM",
+          "title": "丽江古城夜游",
+          "type": "attraction",
+          "note": "忠义市场 → 木府 → 三眼井 → 四方街 → 大石桥 → 大水车 / 观景台；自由活动，累了可缩短"
+        }
+      ]
+    },
+
+    {
+      "day": 7,
+      "date": "2026-11-27",
+      "title": "丽江 → 虎跳峡 → 香格里拉",
+      "city": "丽江 → 香格里拉",
+      "schedule": [
+        {
+          "time": "7:30 AM",
+          "title": "早餐、退房后出发",
+          "type": "transfer"
+        },
+        {
+          "time": "上午",
+          "title": "乘车前往虎跳峡",
+          "type": "transfer",
+          "note": "视路况"
+        },
+        {
+          "time": "约 10:00 AM - 12:00 PM",
+          "title": "虎跳峡游览",
+          "type": "attraction",
+          "note": "导游固定"
+        },
+        {
+          "time": "12:00 PM - 1:00 PM",
+          "title": "午餐",
+          "type": "food"
+        },
+        {
+          "time": "下午",
+          "title": "继续前往香格里拉 → 酒店入住",
+          "type": "transfer",
+          "note": "受路况影响"
+        },
+        {
+          "time": "约 5:00 PM - 7:00 PM",
+          "title": "独克宗古城逛街＋晚餐",
+          "type": "attraction",
+          "note": "导游固定"
+        },
+        {
+          "time": "7:00 PM - 8:30 PM",
+          "title": "月光广场 → 龟山公园 → 大经幡",
+          "type": "attraction",
+          "note": "同一区域顺路完成"
+        }
+      ]
+    },
+
+    {
+      "day": 8,
+      "date": "2026-11-28",
+      "title": "香格里拉 → 昆明",
+      "city": "香格里拉 → 昆明",
+      "schedule": [
+        {
+          "time": "8:00 AM",
+          "title": "早餐后出发",
+          "type": "transfer"
+        },
+        {
+          "time": "8:30 AM - 11:00 AM",
+          "title": "松赞林寺",
+          "type": "attraction",
+          "note": "参观、拍照；导游固定"
+        },
+        {
+          "time": "上午",
+          "title": "藏服写真",
+          "type": "activity",
+          "note": "如要拍写真，尽量安排在松赞林寺这一段；提前确认妆造＋拍摄时间"
+        },
+        {
+          "time": "11:30 AM - 12:30 PM",
+          "title": "午餐",
+          "type": "food"
+        },
+        {
+          "time": "1:00 PM - 3:30 PM",
+          "title": "纳帕海环湖",
+          "type": "attraction",
+          "note": "草原 / 湖景 / 经幡阵；骑马、小羊互动现场决定；不要拖到太晚"
+        },
+        {
+          "time": "约 3:45 PM - 4:15 PM",
+          "title": "结束行程，取行李并前往香格里拉站",
+          "type": "transfer",
+          "note": "预留进站时间"
+        },
+        {
+          "time": "约 5:30 PM",
+          "title": "香格里拉 → 昆明高铁",
+          "type": "train",
+          "note": "车程约 5 小时，最终以出票时间为准"
+        },
+        {
+          "time": "约 10:30 PM+",
+          "title": "抵达昆明 → 酒店入住",
+          "type": "check-in",
+          "note": "直接休息，晚上不再排活动"
+        }
+      ]
+    },
+
+    {
+      "day": 9,
+      "date": "2026-11-29",
+      "title": "昆明 → 回程",
+      "city": "昆明 → 回程",
+      "schedule": [
+        {
+          "time": "早餐后",
+          "title": "收拾行李、退房",
+          "type": "check-out"
+        },
+        {
+          "time": "航班较晚的话",
+          "title": "酒店附近补买伴手礼",
+          "type": "shopping",
+          "note": "鲜花饼、云南咖啡、茶叶等；不安排远景点"
+        },
+        {
+          "time": "按航班时间",
+          "title": "提前前往机场，导游送机",
+          "type": "transfer",
+          "note": "以航班为准"
+        }
+      ]
+    }
+  ],
+
   "places": [],
   "restaurants": [],
   "bookingsAndTickets": [],
+
   "ticketPlanning": {
     "statusStorage": "local",
     "statusStorageNote": "门票状态默认只保存在当前浏览器。",
     "items": []
   },
+
   "preTrip": {
     "packingItems": [],
     "preparationsExplicitlyMentioned": [],
-    "missingNote": ""
+    "missingNote": "航班、酒店具体名称、旅行人数等资料目前未提供。"
   },
+
   "mapLinks": {
     "providedGoogleMapsLinks": [],
-    "note": "",
+    "note": "地图先按云南城市路线展示；具体景点坐标后续可补充。",
     "cityLevelNavigationDisabled": false,
     "navigationPolicy": {
-      "noNavigationTypes": [
-        "flight",
-        "note",
-        "rest"
-      ],
+      "noNavigationTypes": ["flight", "note", "rest"],
       "selfNavigationTypes": [
         "drive",
         "return",
@@ -83,14 +527,64 @@
     },
     "navigationPlaces": []
   },
-  "issuesAndUncertainties": [],
+
+  "issuesAndUncertainties": [
+    "航班资料尚未提供",
+    "酒店名称尚未提供",
+    "旅行人数尚未提供",
+    "高铁时间以最终出票时间为准",
+    "行程可能因天气、塞车、景区排队、索道调度、拍照时间及体力情况调整"
+  ],
+
   "map": {
     "schemaVersion": "1.0-lite",
     "mapMode": "template-auto",
     "templateId": "auto",
     "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
-    "places": [],
-    "routes": [],
+    "places": [
+      {
+        "id": "kunming",
+        "countryCode": "CN"
+      },
+      {
+        "id": "dali",
+        "countryCode": "CN"
+      },
+      {
+        "id": "lijiang",
+        "countryCode": "CN"
+      },
+      {
+        "id": "shangri-la",
+        "countryCode": "CN"
+      }
+    ],
+    "routes": [
+      {
+        "day": 2,
+        "placeIds": ["kunming", "dali"]
+      },
+      {
+        "day": 4,
+        "placeIds": ["dali", "lijiang"]
+      },
+      {
+        "day": 7,
+        "placeIds": ["lijiang", "shangri-la"]
+      },
+      {
+        "day": 8,
+        "placeIds": ["shangri-la", "kunming"]
+      }
+    ],
     "dailyRoutes": []
+  },
+
+  "ledger": {
+    "currency": "CNY",
+    "total": 17151,
+    "paid": 4000,
+    "balance": 13151,
+    "note": "以上金额不包括午餐和晚餐。"
   }
 }
