@@ -143,7 +143,7 @@ function travelOverviewArtwork(days, source = {}, options = {}) {
   const heading = source.heading || { text: "DEMO MAP / 示例地图", x: 33, y: 105 };
   const legend = source.legend || { x: 35, y: 168, gap: 43 };
   const annotations = Array.isArray(source.annotations) ? source.annotations : [];
-  const baseHref = source.baseImage || "assets/maps/aster-isles-base.png";
+  const baseHref = new URL(source.baseImage || "assets/maps/aster-isles-base.png", document.baseURI).href;
   const pathsFor = (route) => options.useDetailedRoutes || !route.overviewPaths?.length ? route.paths : route.overviewPaths;
   const esc = (value) => String(value).replace(/[&<>"']/g, (character) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&apos;"
