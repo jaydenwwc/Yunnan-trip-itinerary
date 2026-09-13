@@ -1,0 +1,1301 @@
+{
+  "version": 1,
+  "generatedBy": "scripts/build-boundary-index.mjs",
+  "entries": [
+    {
+      "kind": "countries",
+      "id": "JP",
+      "name": "Japan",
+      "nameZh": "日本",
+      "file": "countries/JP.geojson",
+      "aliases": [
+        "JP",
+        "Japan",
+        "日本",
+        "JPN"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "KR",
+      "name": "South Korea",
+      "nameZh": "韩国",
+      "file": "countries/KR.geojson",
+      "aliases": [
+        "KR",
+        "South Korea",
+        "韩国",
+        "KOR"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "TH",
+      "name": "Thailand",
+      "nameZh": "泰国",
+      "file": "countries/TH.geojson",
+      "aliases": [
+        "TH",
+        "Thailand",
+        "泰国",
+        "THA"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "SG",
+      "name": "Singapore",
+      "nameZh": "新加坡",
+      "file": "countries/SG.geojson",
+      "aliases": [
+        "SG",
+        "Singapore",
+        "新加坡",
+        "SGP"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "MY",
+      "name": "Malaysia",
+      "nameZh": "马来西亚",
+      "file": "countries/MY.geojson",
+      "aliases": [
+        "MY",
+        "Malaysia",
+        "马来西亚",
+        "MYS"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "VN",
+      "name": "Vietnam",
+      "nameZh": "越南",
+      "file": "countries/VN.geojson",
+      "aliases": [
+        "VN",
+        "Vietnam",
+        "越南",
+        "VNM"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "ID",
+      "name": "Indonesia",
+      "nameZh": "印度尼西亚",
+      "file": "countries/ID.geojson",
+      "aliases": [
+        "ID",
+        "Indonesia",
+        "印度尼西亚",
+        "IDN"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "AU",
+      "name": "Australia",
+      "nameZh": "澳大利亚",
+      "file": "countries/AU.geojson",
+      "aliases": [
+        "AU",
+        "Australia",
+        "澳大利亚",
+        "AUS"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "NZ",
+      "name": "New Zealand",
+      "nameZh": "新西兰",
+      "file": "countries/NZ.geojson",
+      "aliases": [
+        "NZ",
+        "New Zealand",
+        "新西兰",
+        "NZL"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "CH",
+      "name": "Switzerland",
+      "nameZh": "瑞士",
+      "file": "countries/CH.geojson",
+      "aliases": [
+        "CH",
+        "Switzerland",
+        "瑞士",
+        "CHE"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "IT",
+      "name": "Italy",
+      "nameZh": "意大利",
+      "file": "countries/IT.geojson",
+      "aliases": [
+        "IT",
+        "Italy",
+        "意大利",
+        "ITA"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "FR",
+      "name": "France",
+      "nameZh": "法国",
+      "file": "countries/FR.geojson",
+      "aliases": [
+        "FR",
+        "France",
+        "法国",
+        "FRA"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "DE",
+      "name": "Germany",
+      "nameZh": "德国",
+      "file": "countries/DE.geojson",
+      "aliases": [
+        "DE",
+        "Germany",
+        "德国",
+        "DEU"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "ES",
+      "name": "Spain",
+      "nameZh": "西班牙",
+      "file": "countries/ES.geojson",
+      "aliases": [
+        "ES",
+        "Spain",
+        "西班牙",
+        "ESP"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "PT",
+      "name": "Portugal",
+      "nameZh": "葡萄牙",
+      "file": "countries/PT.geojson",
+      "aliases": [
+        "PT",
+        "Portugal",
+        "葡萄牙",
+        "PRT"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "GB",
+      "name": "United Kingdom",
+      "nameZh": "英国",
+      "file": "countries/GB.geojson",
+      "aliases": [
+        "GB",
+        "United Kingdom",
+        "英国",
+        "GBR"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "US",
+      "name": "United States of America",
+      "nameZh": "美国",
+      "file": "countries/US.geojson",
+      "aliases": [
+        "US",
+        "United States of America",
+        "美国",
+        "USA"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "CA",
+      "name": "Canada",
+      "nameZh": "加拿大",
+      "file": "countries/CA.geojson",
+      "aliases": [
+        "CA",
+        "Canada",
+        "加拿大",
+        "CAN"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "ZA",
+      "name": "South Africa",
+      "nameZh": "南非",
+      "file": "countries/ZA.geojson",
+      "aliases": [
+        "ZA",
+        "South Africa",
+        "南非",
+        "ZAF"
+      ]
+    },
+    {
+      "kind": "countries",
+      "id": "CN",
+      "name": "China",
+      "nameZh": "中国",
+      "file": "countries/CN.geojson",
+      "aliases": [
+        "CN",
+        "China",
+        "中国",
+        "CHN"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-HI",
+      "name": "Hainan",
+      "nameZh": "海南",
+      "file": "china-provinces/hainan-province.geojson",
+      "aliases": [
+        "CN-HI",
+        "Hainan",
+        "海南",
+        "Hainan Province",
+        "海南省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-TW",
+      "name": "Taiwan",
+      "nameZh": "台湾",
+      "file": "china-provinces/taiwan-province.geojson",
+      "aliases": [
+        "CN-TW",
+        "Taiwan",
+        "台湾",
+        "Taiwan Province",
+        "台湾省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-GX",
+      "name": "Guangxi",
+      "nameZh": "广西",
+      "file": "china-provinces/guangxi-zhuang-autonomous-region.geojson",
+      "aliases": [
+        "CN-GX",
+        "Guangxi",
+        "广西",
+        "Guangxi Province",
+        "广西省",
+        "Guangxi Zhuang Autonomous Region"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-FJ",
+      "name": "Fujian",
+      "nameZh": "福建",
+      "file": "china-provinces/fujian-province.geojson",
+      "aliases": [
+        "CN-FJ",
+        "Fujian",
+        "福建",
+        "Fujian Province",
+        "福建省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-YN",
+      "name": "Yunnan",
+      "nameZh": "云南",
+      "file": "china-provinces/yunnan-province.geojson",
+      "aliases": [
+        "CN-YN",
+        "Yunnan",
+        "云南",
+        "Yunnan Province",
+        "云南省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-GZ",
+      "name": "Guizhou",
+      "nameZh": "贵州",
+      "file": "china-provinces/guizhou-province.geojson",
+      "aliases": [
+        "CN-GZ",
+        "Guizhou",
+        "贵州",
+        "Guizhou Province",
+        "贵州省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-JX",
+      "name": "Jiangxi",
+      "nameZh": "江西",
+      "file": "china-provinces/jiangxi-province.geojson",
+      "aliases": [
+        "CN-JX",
+        "Jiangxi",
+        "江西",
+        "Jiangxi Province",
+        "江西省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-HN",
+      "name": "Hunan",
+      "nameZh": "湖南",
+      "file": "china-provinces/hunan-province.geojson",
+      "aliases": [
+        "CN-HN",
+        "Hunan",
+        "湖南",
+        "Hunan Province",
+        "湖南省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-ZJ",
+      "name": "Zhejiang",
+      "nameZh": "浙江",
+      "file": "china-provinces/zhejiang-province.geojson",
+      "aliases": [
+        "CN-ZJ",
+        "Zhejiang",
+        "浙江",
+        "Zhejiang Province",
+        "浙江省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-SH",
+      "name": "Shanghai",
+      "nameZh": "上海",
+      "file": "china-provinces/shanghai-municipality.geojson",
+      "aliases": [
+        "CN-SH",
+        "Shanghai",
+        "上海",
+        "Shanghai Province",
+        "上海省",
+        "Shanghai Municipality"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-CQ",
+      "name": "Chongqing",
+      "nameZh": "重庆",
+      "file": "china-provinces/chongqing-municipality.geojson",
+      "aliases": [
+        "CN-CQ",
+        "Chongqing",
+        "重庆",
+        "Chongqing Province",
+        "重庆省",
+        "Chongqing Municipality"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-HB",
+      "name": "Hubei",
+      "nameZh": "湖北",
+      "file": "china-provinces/hubei-province.geojson",
+      "aliases": [
+        "CN-HB",
+        "Hubei",
+        "湖北",
+        "Hubei Province",
+        "湖北省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-SC",
+      "name": "Sichuan",
+      "nameZh": "四川",
+      "file": "china-provinces/sichuan-province.geojson",
+      "aliases": [
+        "CN-SC",
+        "Sichuan",
+        "四川",
+        "Sichuan Province",
+        "四川省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-AH",
+      "name": "Anhui",
+      "nameZh": "安徽",
+      "file": "china-provinces/anhui-province.geojson",
+      "aliases": [
+        "CN-AH",
+        "Anhui",
+        "安徽",
+        "Anhui Province",
+        "安徽省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-JS",
+      "name": "Jiangsu",
+      "nameZh": "江苏",
+      "file": "china-provinces/jiangsu-province.geojson",
+      "aliases": [
+        "CN-JS",
+        "Jiangsu",
+        "江苏",
+        "Jiangsu Province",
+        "江苏省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-HA",
+      "name": "Henan",
+      "nameZh": "河南",
+      "file": "china-provinces/henan-province.geojson",
+      "aliases": [
+        "CN-HA",
+        "Henan",
+        "河南",
+        "Henan Province",
+        "河南省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-XZ",
+      "name": "Tibet",
+      "nameZh": "西藏",
+      "file": "china-provinces/tibet-autonomous-region.geojson",
+      "aliases": [
+        "CN-XZ",
+        "Tibet",
+        "西藏",
+        "Tibet Province",
+        "西藏省",
+        "Tibet Autonomous Region"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-SD",
+      "name": "Shandong",
+      "nameZh": "山东",
+      "file": "china-provinces/shandong-province.geojson",
+      "aliases": [
+        "CN-SD",
+        "Shandong",
+        "山东",
+        "Shandong Province",
+        "山东省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-QH",
+      "name": "Qinghai",
+      "nameZh": "青海",
+      "file": "china-provinces/qinghai-province.geojson",
+      "aliases": [
+        "CN-QH",
+        "Qinghai",
+        "青海",
+        "Qinghai Province",
+        "青海省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-NX",
+      "name": "Ningxia",
+      "nameZh": "宁夏",
+      "file": "china-provinces/ningxia-ningxia-hui-autonomous-region.geojson",
+      "aliases": [
+        "CN-NX",
+        "Ningxia",
+        "宁夏",
+        "Ningxia Province",
+        "宁夏省",
+        "Ningxia Ningxia Hui Autonomous Region"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-SN",
+      "name": "Shaanxi",
+      "nameZh": "陕西",
+      "file": "china-provinces/shaanxi-province.geojson",
+      "aliases": [
+        "CN-SN",
+        "Shaanxi",
+        "陕西",
+        "Shaanxi Province",
+        "陕西省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-TJ",
+      "name": "Tianjin",
+      "nameZh": "天津",
+      "file": "china-provinces/tianjin-municipality.geojson",
+      "aliases": [
+        "CN-TJ",
+        "Tianjin",
+        "天津",
+        "Tianjin Province",
+        "天津省",
+        "Tianjin Municipality"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-SX",
+      "name": "Shanxi",
+      "nameZh": "山西",
+      "file": "china-provinces/shanxi-province.geojson",
+      "aliases": [
+        "CN-SX",
+        "Shanxi",
+        "山西",
+        "Shanxi Province",
+        "山西省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-BJ",
+      "name": "Beijing",
+      "nameZh": "北京",
+      "file": "china-provinces/beijing-municipality.geojson",
+      "aliases": [
+        "CN-BJ",
+        "Beijing",
+        "北京",
+        "Beijing Province",
+        "北京省",
+        "Beijing Municipality"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-GS",
+      "name": "Gansu",
+      "nameZh": "甘肃",
+      "file": "china-provinces/gansu-province.geojson",
+      "aliases": [
+        "CN-GS",
+        "Gansu",
+        "甘肃",
+        "Gansu Province",
+        "甘肃省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-HE",
+      "name": "Hebei",
+      "nameZh": "河北",
+      "file": "china-provinces/hebei-province.geojson",
+      "aliases": [
+        "CN-HE",
+        "Hebei",
+        "河北",
+        "Hebei Province",
+        "河北省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-LN",
+      "name": "Liaoning",
+      "nameZh": "辽宁",
+      "file": "china-provinces/liaoning-province.geojson",
+      "aliases": [
+        "CN-LN",
+        "Liaoning",
+        "辽宁",
+        "Liaoning Province",
+        "辽宁省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-JL",
+      "name": "Jilin",
+      "nameZh": "吉林",
+      "file": "china-provinces/jilin-province.geojson",
+      "aliases": [
+        "CN-JL",
+        "Jilin",
+        "吉林",
+        "Jilin Province",
+        "吉林省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-XJ",
+      "name": "Xinjiang",
+      "nameZh": "新疆",
+      "file": "china-provinces/xinjiang-uyghur-autonomous-region.geojson",
+      "aliases": [
+        "CN-XJ",
+        "Xinjiang",
+        "新疆",
+        "Xinjiang Province",
+        "新疆省",
+        "Xinjiang Uyghur Autonomous Region"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-NM",
+      "name": "Inner Mongolia",
+      "nameZh": "内蒙古",
+      "file": "china-provinces/inner-mongolia-autonomous-region.geojson",
+      "aliases": [
+        "CN-NM",
+        "Inner Mongolia",
+        "内蒙古",
+        "Inner Mongolia Province",
+        "内蒙古省",
+        "Inner Mongolia Autonomous Region"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-HL",
+      "name": "Heilongjiang",
+      "nameZh": "黑龙江",
+      "file": "china-provinces/heilongjiang-province.geojson",
+      "aliases": [
+        "CN-HL",
+        "Heilongjiang",
+        "黑龙江",
+        "Heilongjiang Province",
+        "黑龙江省"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-MO",
+      "name": "Macao",
+      "nameZh": "澳门",
+      "file": "china-provinces/macau-special-administrative-region.geojson",
+      "aliases": [
+        "CN-MO",
+        "Macao",
+        "澳门",
+        "Macao Province",
+        "澳门省",
+        "Macau Special Administrative Region"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-HK",
+      "name": "Hong Kong",
+      "nameZh": "香港",
+      "file": "china-provinces/hong-kong-special-administrative-region.geojson",
+      "aliases": [
+        "CN-HK",
+        "Hong Kong",
+        "香港",
+        "Hong Kong Province",
+        "香港省",
+        "Hong Kong Special Administrative Region"
+      ]
+    },
+    {
+      "kind": "china-provinces",
+      "id": "CN-GD",
+      "name": "Guangdong",
+      "nameZh": "广东",
+      "file": "china-provinces/guangzhou-province.geojson",
+      "aliases": [
+        "CN-GD",
+        "Guangdong",
+        "广东",
+        "Guangdong Province",
+        "广东省",
+        "Guangzhou Province"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "beijing",
+      "name": "北京市",
+      "file": "major-cities/beijing.geojson",
+      "aliases": [
+        "beijing",
+        "北京市",
+        "undefined市",
+        "北京市, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "shanghai",
+      "name": "上海市",
+      "file": "major-cities/shanghai.geojson",
+      "aliases": [
+        "shanghai",
+        "上海市",
+        "undefined市",
+        "上海市, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "shenzhen",
+      "name": "深圳市",
+      "file": "major-cities/shenzhen.geojson",
+      "aliases": [
+        "shenzhen",
+        "深圳市",
+        "undefined市",
+        "深圳市, 广东省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "guangzhou",
+      "name": "广州市",
+      "file": "major-cities/guangzhou.geojson",
+      "aliases": [
+        "guangzhou",
+        "广州市",
+        "undefined市",
+        "广州市, 广东省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "hangzhou",
+      "name": "杭州市",
+      "file": "major-cities/hangzhou.geojson",
+      "aliases": [
+        "hangzhou",
+        "杭州市",
+        "undefined市",
+        "杭州市, 浙江省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "chengdu",
+      "name": "成都市",
+      "file": "major-cities/chengdu.geojson",
+      "aliases": [
+        "chengdu",
+        "成都市",
+        "undefined市",
+        "成都市, 四川省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "chongqing",
+      "name": "重庆市",
+      "file": "major-cities/chongqing.geojson",
+      "aliases": [
+        "chongqing",
+        "重庆市",
+        "undefined市",
+        "重庆市, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "xian",
+      "name": "西安市",
+      "file": "major-cities/xian.geojson",
+      "aliases": [
+        "xian",
+        "西安市",
+        "undefined市",
+        "西安市, 陕西省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "nanjing",
+      "name": "南京市",
+      "file": "major-cities/nanjing.geojson",
+      "aliases": [
+        "nanjing",
+        "南京市",
+        "undefined市",
+        "南京市, 江苏省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "suzhou",
+      "name": "苏州市",
+      "file": "major-cities/suzhou.geojson",
+      "aliases": [
+        "suzhou",
+        "苏州市",
+        "undefined市",
+        "苏州市, 江苏省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "wuhan",
+      "name": "武汉市",
+      "file": "major-cities/wuhan.geojson",
+      "aliases": [
+        "wuhan",
+        "武汉市",
+        "undefined市",
+        "武汉市, 湖北省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "changsha",
+      "name": "长沙市",
+      "file": "major-cities/changsha.geojson",
+      "aliases": [
+        "changsha",
+        "长沙市",
+        "undefined市",
+        "长沙市, 湖南省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "xiamen",
+      "name": "厦门市",
+      "file": "major-cities/xiamen.geojson",
+      "aliases": [
+        "xiamen",
+        "厦门市",
+        "undefined市",
+        "厦门市, 福建省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "qingdao",
+      "name": "青岛市",
+      "file": "major-cities/qingdao.geojson",
+      "aliases": [
+        "qingdao",
+        "青岛市",
+        "undefined市",
+        "青岛市, 山东省, 266000, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "sanya",
+      "name": "三亚市",
+      "file": "major-cities/sanya.geojson",
+      "aliases": [
+        "sanya",
+        "三亚市",
+        "undefined市",
+        "三亚市, 海南省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "kunming",
+      "name": "昆明市",
+      "file": "major-cities/kunming.geojson",
+      "aliases": [
+        "kunming",
+        "昆明市",
+        "undefined市",
+        "昆明市, 云南省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "dali",
+      "name": "大理市",
+      "file": "major-cities/dali.geojson",
+      "aliases": [
+        "dali",
+        "大理市",
+        "undefined市",
+        "大理市, 大理白族自治州, 云南省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "lijiang",
+      "name": "丽江市",
+      "file": "major-cities/lijiang.geojson",
+      "aliases": [
+        "lijiang",
+        "丽江市",
+        "undefined市",
+        "丽江市, 云南省, 中国"
+      ]
+    },
+    {
+      "kind": "major-cities",
+      "id": "guilin",
+      "name": "桂林市",
+      "file": "major-cities/guilin.geojson",
+      "aliases": [
+        "guilin",
+        "桂林市",
+        "undefined市",
+        "桂林市, 广西壮族自治区, 中国"
+      ]
+    }
+  ],
+  "aliases": {
+    "jp": "countries/JP.geojson",
+    "japan": "countries/JP.geojson",
+    "日本": "countries/JP.geojson",
+    "jpn": "countries/JP.geojson",
+    "kr": "countries/KR.geojson",
+    "south korea": "countries/KR.geojson",
+    "韩国": "countries/KR.geojson",
+    "kor": "countries/KR.geojson",
+    "th": "countries/TH.geojson",
+    "thailand": "countries/TH.geojson",
+    "泰国": "countries/TH.geojson",
+    "tha": "countries/TH.geojson",
+    "sg": "countries/SG.geojson",
+    "singapore": "countries/SG.geojson",
+    "新加坡": "countries/SG.geojson",
+    "sgp": "countries/SG.geojson",
+    "my": "countries/MY.geojson",
+    "malaysia": "countries/MY.geojson",
+    "马来西亚": "countries/MY.geojson",
+    "mys": "countries/MY.geojson",
+    "vn": "countries/VN.geojson",
+    "vietnam": "countries/VN.geojson",
+    "越南": "countries/VN.geojson",
+    "vnm": "countries/VN.geojson",
+    "id": "countries/ID.geojson",
+    "indonesia": "countries/ID.geojson",
+    "印度尼西亚": "countries/ID.geojson",
+    "idn": "countries/ID.geojson",
+    "au": "countries/AU.geojson",
+    "australia": "countries/AU.geojson",
+    "澳大利亚": "countries/AU.geojson",
+    "aus": "countries/AU.geojson",
+    "nz": "countries/NZ.geojson",
+    "new zealand": "countries/NZ.geojson",
+    "新西兰": "countries/NZ.geojson",
+    "nzl": "countries/NZ.geojson",
+    "ch": "countries/CH.geojson",
+    "switzerland": "countries/CH.geojson",
+    "瑞士": "countries/CH.geojson",
+    "che": "countries/CH.geojson",
+    "it": "countries/IT.geojson",
+    "italy": "countries/IT.geojson",
+    "意大利": "countries/IT.geojson",
+    "ita": "countries/IT.geojson",
+    "fr": "countries/FR.geojson",
+    "france": "countries/FR.geojson",
+    "法国": "countries/FR.geojson",
+    "fra": "countries/FR.geojson",
+    "de": "countries/DE.geojson",
+    "germany": "countries/DE.geojson",
+    "德国": "countries/DE.geojson",
+    "deu": "countries/DE.geojson",
+    "es": "countries/ES.geojson",
+    "spain": "countries/ES.geojson",
+    "西班牙": "countries/ES.geojson",
+    "esp": "countries/ES.geojson",
+    "pt": "countries/PT.geojson",
+    "portugal": "countries/PT.geojson",
+    "葡萄牙": "countries/PT.geojson",
+    "prt": "countries/PT.geojson",
+    "gb": "countries/GB.geojson",
+    "united kingdom": "countries/GB.geojson",
+    "英国": "countries/GB.geojson",
+    "gbr": "countries/GB.geojson",
+    "us": "countries/US.geojson",
+    "united states of america": "countries/US.geojson",
+    "美国": "countries/US.geojson",
+    "usa": "countries/US.geojson",
+    "ca": "countries/CA.geojson",
+    "canada": "countries/CA.geojson",
+    "加拿大": "countries/CA.geojson",
+    "can": "countries/CA.geojson",
+    "za": "countries/ZA.geojson",
+    "south africa": "countries/ZA.geojson",
+    "南非": "countries/ZA.geojson",
+    "zaf": "countries/ZA.geojson",
+    "cn": "countries/CN.geojson",
+    "china": "countries/CN.geojson",
+    "中国": "countries/CN.geojson",
+    "chn": "countries/CN.geojson",
+    "cn-hi": "china-provinces/hainan-province.geojson",
+    "hainan": "china-provinces/hainan-province.geojson",
+    "海南": "china-provinces/hainan-province.geojson",
+    "hainan province": "china-provinces/hainan-province.geojson",
+    "海南省": "china-provinces/hainan-province.geojson",
+    "cn-tw": "china-provinces/taiwan-province.geojson",
+    "taiwan": "china-provinces/taiwan-province.geojson",
+    "台湾": "china-provinces/taiwan-province.geojson",
+    "taiwan province": "china-provinces/taiwan-province.geojson",
+    "台湾省": "china-provinces/taiwan-province.geojson",
+    "cn-gx": "china-provinces/guangxi-zhuang-autonomous-region.geojson",
+    "guangxi": "china-provinces/guangxi-zhuang-autonomous-region.geojson",
+    "广西": "china-provinces/guangxi-zhuang-autonomous-region.geojson",
+    "guangxi province": "china-provinces/guangxi-zhuang-autonomous-region.geojson",
+    "广西省": "china-provinces/guangxi-zhuang-autonomous-region.geojson",
+    "guangxi zhuang autonomous region": "china-provinces/guangxi-zhuang-autonomous-region.geojson",
+    "cn-fj": "china-provinces/fujian-province.geojson",
+    "fujian": "china-provinces/fujian-province.geojson",
+    "福建": "china-provinces/fujian-province.geojson",
+    "fujian province": "china-provinces/fujian-province.geojson",
+    "福建省": "china-provinces/fujian-province.geojson",
+    "cn-yn": "china-provinces/yunnan-province.geojson",
+    "yunnan": "china-provinces/yunnan-province.geojson",
+    "云南": "china-provinces/yunnan-province.geojson",
+    "yunnan province": "china-provinces/yunnan-province.geojson",
+    "云南省": "china-provinces/yunnan-province.geojson",
+    "cn-gz": "china-provinces/guizhou-province.geojson",
+    "guizhou": "china-provinces/guizhou-province.geojson",
+    "贵州": "china-provinces/guizhou-province.geojson",
+    "guizhou province": "china-provinces/guizhou-province.geojson",
+    "贵州省": "china-provinces/guizhou-province.geojson",
+    "cn-jx": "china-provinces/jiangxi-province.geojson",
+    "jiangxi": "china-provinces/jiangxi-province.geojson",
+    "江西": "china-provinces/jiangxi-province.geojson",
+    "jiangxi province": "china-provinces/jiangxi-province.geojson",
+    "江西省": "china-provinces/jiangxi-province.geojson",
+    "cn-hn": "china-provinces/hunan-province.geojson",
+    "hunan": "china-provinces/hunan-province.geojson",
+    "湖南": "china-provinces/hunan-province.geojson",
+    "hunan province": "china-provinces/hunan-province.geojson",
+    "湖南省": "china-provinces/hunan-province.geojson",
+    "cn-zj": "china-provinces/zhejiang-province.geojson",
+    "zhejiang": "china-provinces/zhejiang-province.geojson",
+    "浙江": "china-provinces/zhejiang-province.geojson",
+    "zhejiang province": "china-provinces/zhejiang-province.geojson",
+    "浙江省": "china-provinces/zhejiang-province.geojson",
+    "cn-sh": "china-provinces/shanghai-municipality.geojson",
+    "shanghai": "major-cities/shanghai.geojson",
+    "上海": "china-provinces/shanghai-municipality.geojson",
+    "shanghai province": "china-provinces/shanghai-municipality.geojson",
+    "上海省": "china-provinces/shanghai-municipality.geojson",
+    "shanghai municipality": "china-provinces/shanghai-municipality.geojson",
+    "cn-cq": "china-provinces/chongqing-municipality.geojson",
+    "chongqing": "major-cities/chongqing.geojson",
+    "重庆": "china-provinces/chongqing-municipality.geojson",
+    "chongqing province": "china-provinces/chongqing-municipality.geojson",
+    "重庆省": "china-provinces/chongqing-municipality.geojson",
+    "chongqing municipality": "china-provinces/chongqing-municipality.geojson",
+    "cn-hb": "china-provinces/hubei-province.geojson",
+    "hubei": "china-provinces/hubei-province.geojson",
+    "湖北": "china-provinces/hubei-province.geojson",
+    "hubei province": "china-provinces/hubei-province.geojson",
+    "湖北省": "china-provinces/hubei-province.geojson",
+    "cn-sc": "china-provinces/sichuan-province.geojson",
+    "sichuan": "china-provinces/sichuan-province.geojson",
+    "四川": "china-provinces/sichuan-province.geojson",
+    "sichuan province": "china-provinces/sichuan-province.geojson",
+    "四川省": "china-provinces/sichuan-province.geojson",
+    "cn-ah": "china-provinces/anhui-province.geojson",
+    "anhui": "china-provinces/anhui-province.geojson",
+    "安徽": "china-provinces/anhui-province.geojson",
+    "anhui province": "china-provinces/anhui-province.geojson",
+    "安徽省": "china-provinces/anhui-province.geojson",
+    "cn-js": "china-provinces/jiangsu-province.geojson",
+    "jiangsu": "china-provinces/jiangsu-province.geojson",
+    "江苏": "china-provinces/jiangsu-province.geojson",
+    "jiangsu province": "china-provinces/jiangsu-province.geojson",
+    "江苏省": "china-provinces/jiangsu-province.geojson",
+    "cn-ha": "china-provinces/henan-province.geojson",
+    "henan": "china-provinces/henan-province.geojson",
+    "河南": "china-provinces/henan-province.geojson",
+    "henan province": "china-provinces/henan-province.geojson",
+    "河南省": "china-provinces/henan-province.geojson",
+    "cn-xz": "china-provinces/tibet-autonomous-region.geojson",
+    "tibet": "china-provinces/tibet-autonomous-region.geojson",
+    "西藏": "china-provinces/tibet-autonomous-region.geojson",
+    "tibet province": "china-provinces/tibet-autonomous-region.geojson",
+    "西藏省": "china-provinces/tibet-autonomous-region.geojson",
+    "tibet autonomous region": "china-provinces/tibet-autonomous-region.geojson",
+    "cn-sd": "china-provinces/shandong-province.geojson",
+    "shandong": "china-provinces/shandong-province.geojson",
+    "山东": "china-provinces/shandong-province.geojson",
+    "shandong province": "china-provinces/shandong-province.geojson",
+    "山东省": "china-provinces/shandong-province.geojson",
+    "cn-qh": "china-provinces/qinghai-province.geojson",
+    "qinghai": "china-provinces/qinghai-province.geojson",
+    "青海": "china-provinces/qinghai-province.geojson",
+    "qinghai province": "china-provinces/qinghai-province.geojson",
+    "青海省": "china-provinces/qinghai-province.geojson",
+    "cn-nx": "china-provinces/ningxia-ningxia-hui-autonomous-region.geojson",
+    "ningxia": "china-provinces/ningxia-ningxia-hui-autonomous-region.geojson",
+    "宁夏": "china-provinces/ningxia-ningxia-hui-autonomous-region.geojson",
+    "ningxia province": "china-provinces/ningxia-ningxia-hui-autonomous-region.geojson",
+    "宁夏省": "china-provinces/ningxia-ningxia-hui-autonomous-region.geojson",
+    "ningxia ningxia hui autonomous region": "china-provinces/ningxia-ningxia-hui-autonomous-region.geojson",
+    "cn-sn": "china-provinces/shaanxi-province.geojson",
+    "shaanxi": "china-provinces/shaanxi-province.geojson",
+    "陕西": "china-provinces/shaanxi-province.geojson",
+    "shaanxi province": "china-provinces/shaanxi-province.geojson",
+    "陕西省": "china-provinces/shaanxi-province.geojson",
+    "cn-tj": "china-provinces/tianjin-municipality.geojson",
+    "tianjin": "china-provinces/tianjin-municipality.geojson",
+    "天津": "china-provinces/tianjin-municipality.geojson",
+    "tianjin province": "china-provinces/tianjin-municipality.geojson",
+    "天津省": "china-provinces/tianjin-municipality.geojson",
+    "tianjin municipality": "china-provinces/tianjin-municipality.geojson",
+    "cn-sx": "china-provinces/shanxi-province.geojson",
+    "shanxi": "china-provinces/shanxi-province.geojson",
+    "山西": "china-provinces/shanxi-province.geojson",
+    "shanxi province": "china-provinces/shanxi-province.geojson",
+    "山西省": "china-provinces/shanxi-province.geojson",
+    "cn-bj": "china-provinces/beijing-municipality.geojson",
+    "beijing": "major-cities/beijing.geojson",
+    "北京": "china-provinces/beijing-municipality.geojson",
+    "beijing province": "china-provinces/beijing-municipality.geojson",
+    "北京省": "china-provinces/beijing-municipality.geojson",
+    "beijing municipality": "china-provinces/beijing-municipality.geojson",
+    "cn-gs": "china-provinces/gansu-province.geojson",
+    "gansu": "china-provinces/gansu-province.geojson",
+    "甘肃": "china-provinces/gansu-province.geojson",
+    "gansu province": "china-provinces/gansu-province.geojson",
+    "甘肃省": "china-provinces/gansu-province.geojson",
+    "cn-he": "china-provinces/hebei-province.geojson",
+    "hebei": "china-provinces/hebei-province.geojson",
+    "河北": "china-provinces/hebei-province.geojson",
+    "hebei province": "china-provinces/hebei-province.geojson",
+    "河北省": "china-provinces/hebei-province.geojson",
+    "cn-ln": "china-provinces/liaoning-province.geojson",
+    "liaoning": "china-provinces/liaoning-province.geojson",
+    "辽宁": "china-provinces/liaoning-province.geojson",
+    "liaoning province": "china-provinces/liaoning-province.geojson",
+    "辽宁省": "china-provinces/liaoning-province.geojson",
+    "cn-jl": "china-provinces/jilin-province.geojson",
+    "jilin": "china-provinces/jilin-province.geojson",
+    "吉林": "china-provinces/jilin-province.geojson",
+    "jilin province": "china-provinces/jilin-province.geojson",
+    "吉林省": "china-provinces/jilin-province.geojson",
+    "cn-xj": "china-provinces/xinjiang-uyghur-autonomous-region.geojson",
+    "xinjiang": "china-provinces/xinjiang-uyghur-autonomous-region.geojson",
+    "新疆": "china-provinces/xinjiang-uyghur-autonomous-region.geojson",
+    "xinjiang province": "china-provinces/xinjiang-uyghur-autonomous-region.geojson",
+    "新疆省": "china-provinces/xinjiang-uyghur-autonomous-region.geojson",
+    "xinjiang uyghur autonomous region": "china-provinces/xinjiang-uyghur-autonomous-region.geojson",
+    "cn-nm": "china-provinces/inner-mongolia-autonomous-region.geojson",
+    "inner mongolia": "china-provinces/inner-mongolia-autonomous-region.geojson",
+    "内蒙古": "china-provinces/inner-mongolia-autonomous-region.geojson",
+    "inner mongolia province": "china-provinces/inner-mongolia-autonomous-region.geojson",
+    "内蒙古省": "china-provinces/inner-mongolia-autonomous-region.geojson",
+    "inner mongolia autonomous region": "china-provinces/inner-mongolia-autonomous-region.geojson",
+    "cn-hl": "china-provinces/heilongjiang-province.geojson",
+    "heilongjiang": "china-provinces/heilongjiang-province.geojson",
+    "黑龙江": "china-provinces/heilongjiang-province.geojson",
+    "heilongjiang province": "china-provinces/heilongjiang-province.geojson",
+    "黑龙江省": "china-provinces/heilongjiang-province.geojson",
+    "cn-mo": "china-provinces/macau-special-administrative-region.geojson",
+    "macao": "china-provinces/macau-special-administrative-region.geojson",
+    "澳门": "china-provinces/macau-special-administrative-region.geojson",
+    "macao province": "china-provinces/macau-special-administrative-region.geojson",
+    "澳门省": "china-provinces/macau-special-administrative-region.geojson",
+    "macau special administrative region": "china-provinces/macau-special-administrative-region.geojson",
+    "cn-hk": "china-provinces/hong-kong-special-administrative-region.geojson",
+    "hong kong": "china-provinces/hong-kong-special-administrative-region.geojson",
+    "香港": "china-provinces/hong-kong-special-administrative-region.geojson",
+    "hong kong province": "china-provinces/hong-kong-special-administrative-region.geojson",
+    "香港省": "china-provinces/hong-kong-special-administrative-region.geojson",
+    "hong kong special administrative region": "china-provinces/hong-kong-special-administrative-region.geojson",
+    "cn-gd": "china-provinces/guangzhou-province.geojson",
+    "guangdong": "china-provinces/guangzhou-province.geojson",
+    "广东": "china-provinces/guangzhou-province.geojson",
+    "guangdong province": "china-provinces/guangzhou-province.geojson",
+    "广东省": "china-provinces/guangzhou-province.geojson",
+    "guangzhou province": "china-provinces/guangzhou-province.geojson",
+    "北京市": "major-cities/beijing.geojson",
+    "undefined市": "major-cities/guilin.geojson",
+    "北京市, 中国": "major-cities/beijing.geojson",
+    "上海市": "major-cities/shanghai.geojson",
+    "上海市, 中国": "major-cities/shanghai.geojson",
+    "shenzhen": "major-cities/shenzhen.geojson",
+    "深圳市": "major-cities/shenzhen.geojson",
+    "深圳市, 广东省, 中国": "major-cities/shenzhen.geojson",
+    "guangzhou": "major-cities/guangzhou.geojson",
+    "广州市": "major-cities/guangzhou.geojson",
+    "广州市, 广东省, 中国": "major-cities/guangzhou.geojson",
+    "hangzhou": "major-cities/hangzhou.geojson",
+    "杭州市": "major-cities/hangzhou.geojson",
+    "杭州市, 浙江省, 中国": "major-cities/hangzhou.geojson",
+    "chengdu": "major-cities/chengdu.geojson",
+    "成都市": "major-cities/chengdu.geojson",
+    "成都市, 四川省, 中国": "major-cities/chengdu.geojson",
+    "重庆市": "major-cities/chongqing.geojson",
+    "重庆市, 中国": "major-cities/chongqing.geojson",
+    "xian": "major-cities/xian.geojson",
+    "西安市": "major-cities/xian.geojson",
+    "西安市, 陕西省, 中国": "major-cities/xian.geojson",
+    "nanjing": "major-cities/nanjing.geojson",
+    "南京市": "major-cities/nanjing.geojson",
+    "南京市, 江苏省, 中国": "major-cities/nanjing.geojson",
+    "suzhou": "major-cities/suzhou.geojson",
+    "苏州市": "major-cities/suzhou.geojson",
+    "苏州市, 江苏省, 中国": "major-cities/suzhou.geojson",
+    "wuhan": "major-cities/wuhan.geojson",
+    "武汉市": "major-cities/wuhan.geojson",
+    "武汉市, 湖北省, 中国": "major-cities/wuhan.geojson",
+    "changsha": "major-cities/changsha.geojson",
+    "长沙市": "major-cities/changsha.geojson",
+    "长沙市, 湖南省, 中国": "major-cities/changsha.geojson",
+    "xiamen": "major-cities/xiamen.geojson",
+    "厦门市": "major-cities/xiamen.geojson",
+    "厦门市, 福建省, 中国": "major-cities/xiamen.geojson",
+    "qingdao": "major-cities/qingdao.geojson",
+    "青岛市": "major-cities/qingdao.geojson",
+    "青岛市, 山东省, 266000, 中国": "major-cities/qingdao.geojson",
+    "sanya": "major-cities/sanya.geojson",
+    "三亚市": "major-cities/sanya.geojson",
+    "三亚市, 海南省, 中国": "major-cities/sanya.geojson",
+    "kunming": "major-cities/kunming.geojson",
+    "昆明市": "major-cities/kunming.geojson",
+    "昆明市, 云南省, 中国": "major-cities/kunming.geojson",
+    "dali": "major-cities/dali.geojson",
+    "大理市": "major-cities/dali.geojson",
+    "大理市, 大理白族自治州, 云南省, 中国": "major-cities/dali.geojson",
+    "lijiang": "major-cities/lijiang.geojson",
+    "丽江市": "major-cities/lijiang.geojson",
+    "丽江市, 云南省, 中国": "major-cities/lijiang.geojson",
+    "guilin": "major-cities/guilin.geojson",
+    "桂林市": "major-cities/guilin.geojson",
+    "桂林市, 广西壮族自治区, 中国": "major-cities/guilin.geojson"
+  }
+}

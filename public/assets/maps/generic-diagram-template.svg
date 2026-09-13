@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1448" height="1086" viewBox="0 0 1448 1086">
+  <defs>
+    <filter id="paper-noise" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="17" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values=".32 0 0 0 .68 .32 0 0 0 .66 .32 0 0 0 .60 0 0 0 .11 0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <pattern id="contours" width="268" height="184" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#899488" stroke-opacity=".16" stroke-width="1">
+        <path d="M18 116c19-55 82-79 139-54 37 16 64 14 95-4"/>
+        <path d="M35 127c18-39 69-57 113-37 36 16 68 13 98-6"/>
+        <path d="M62 135c17-23 48-34 78-21 28 12 55 10 79-5"/>
+        <path d="M200 174c-25-31-18-71 16-94 16-11 29-27 38-48"/>
+      </g>
+    </pattern>
+    <symbol id="mountain" viewBox="0 0 90 55">
+      <path d="M2 52 28 17l10 14L53 4l35 48" fill="#f7f6ef" stroke="#899184" stroke-width="1.4"/>
+      <path d="m45 18 8-14 11 17-10-6-5 8z" fill="#d9ded6"/>
+      <path d="m19 29 9-12 7 10-8-4z" fill="#d9ded6"/>
+    </symbol>
+    <symbol id="pine" viewBox="0 0 32 58">
+      <path d="M16 2 4 25h8L2 43h12v13h4V43h12L20 25h8z" fill="none" stroke="#758273" stroke-width="1.5" stroke-linejoin="round"/>
+    </symbol>
+    <clipPath id="diagram-clip">
+      <path d="M286 278C430 216 568 248 680 225c174-36 332-10 478 44 130 49 191 150 172 251-14 77 25 151-33 233-73 102-206 104-321 101-128-3-209 43-350 35-123-7-224-44-300-117-82-79-73-183-91-274-19-95-65-174 31-220Z"/>
+    </clipPath>
+  </defs>
+  <rect width="1448" height="1086" fill="#f2f1eb"/>
+  <rect width="1448" height="1086" fill="#f7f6f1" filter="url(#paper-noise)" opacity=".72"/>
+  <path d="M286 278C430 216 568 248 680 225c174-36 332-10 478 44 130 49 191 150 172 251-14 77 25 151-33 233-73 102-206 104-321 101-128-3-209 43-350 35-123-7-224-44-300-117-82-79-73-183-91-274-19-95-65-174 31-220Z" fill="none" stroke="#fff" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M286 278C430 216 568 248 680 225c174-36 332-10 478 44 130 49 191 150 172 251-14 77 25 151-33 233-73 102-206 104-321 101-128-3-209 43-350 35-123-7-224-44-300-117-82-79-73-183-91-274-19-95-65-174 31-220Z" fill="#f5f5ee" stroke="#899283" stroke-width="3.6" stroke-linejoin="round"/>
+  <rect width="1448" height="1086" fill="url(#contours)" clip-path="url(#diagram-clip)"/>
+  <g clip-path="url(#diagram-clip)">
+    <path d="M225 735C376 690 443 741 565 674c143-78 219-105 353-51 133 53 247 13 374-79" fill="none" stroke="#c7e5f3" stroke-width="15" opacity=".78"/>
+    <path d="M225 735C376 690 443 741 565 674c143-78 219-105 353-51 133 53 247 13 374-79" fill="none" stroke="#83bfe2" stroke-width="2.4" opacity=".9"/>
+    <g opacity=".66">
+      <use href="#mountain" x="420" y="748" width="125"/>
+      <use href="#mountain" x="526" y="724" width="150"/>
+      <use href="#mountain" x="672" y="765" width="120"/>
+      <use href="#mountain" x="805" y="724" width="148"/>
+      <use href="#mountain" x="954" y="756" width="125"/>
+      <use href="#pine" x="355" y="395" width="37"/>
+      <use href="#pine" x="397" y="417" width="31"/>
+      <use href="#pine" x="1120" y="378" width="39"/>
+      <use href="#pine" x="1160" y="408" width="31"/>
+    </g>
+  </g>
+  <text x="58" y="1022" fill="#103968" fill-opacity=".32" font-family="Times New Roman, Songti SC, STSong, serif" font-size="17" letter-spacing="4">TRAVEL MAP · GOLDEN SCHEMATIC SERIES</text>
+</svg>
